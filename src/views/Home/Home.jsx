@@ -35,9 +35,12 @@ const Home = () => {
                     <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703606411/Proyecto%20Final/Pngtree_modern_flat_design_concept_of_5332895_urwd9k.png' alt="" className='w-[40rem]'/>
                 </div>
             </section>
-            {/* <section className='mt-[300px]'>
+            <section className=''>
                 <OurService/>
-            </section> */}
+            </section>
+            <section>
+                <WhyUs/>
+            </section>
         </div>
     );
 };
