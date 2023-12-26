@@ -3,10 +3,12 @@ import imagen from './img/imagen-inicio.jpg'
 import {Typewriter} from 'react-simple-typewriter'
 import WhyUs from '../../components/WhyUs/WhyUs';
 import OurService from '../../components/OurService/OurService';
+import Header from '../../components/Header/Header';
 
 const Home = () => {
     return (
-        <div className='h-full w-full bg-gray-900'>
+        <div className='h-full w-full bg-[#0D0D0D]'>
+            <Header/>
             <section className='pt-10 pl-10 flex justify-between h-[600px]'>
                 <div className='flex flex-col justify-center'>
                     <h1 className='text-gray-100 font-bold text-[70px] ml-10'>HI, WE ARE ELICA</h1>
@@ -32,6 +34,9 @@ const Home = () => {
             </section>
             <section className='mt-[300px]'>
                 <OurService/>
+            </section>
+            <section className='mt-[200px]'>
+                <WhyUs/>
             </section>
         </div>
     );
