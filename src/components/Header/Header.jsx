@@ -16,12 +16,12 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="fixed z-20 w-full">
+    <Disclosure as="nav" className="fixed z-20 w-full bg-black bg-opacity-25 backdrop-filter backdrop-blur-lg">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:4">
             <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white focus:outline-none ">
                   <span className="absolute -inset-0.5" />
@@ -37,7 +37,7 @@ export default function Header() {
                 <div className="flex flex-shrink-0">
                   <h1 className='text-white'>LOGO</h1>
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="hidden lg:ml-6 lg:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
@@ -58,7 +58,7 @@ export default function Header() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="lg:hidden">
             <div className="space-y-1 px-6 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
