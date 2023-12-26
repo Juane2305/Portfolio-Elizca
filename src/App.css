@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+#title{
+    text-shadow: 2px 0px 5px rgba(20,30,38,0.6);
+}
