@@ -7,14 +7,17 @@ import Header from '../../components/Header/Header';
 
 const Home = () => {
     return (
-        <div className='h-full w-full bg-[#0D0D0D]'>
+        <div className='h-screen w-full bg-[#0D0D0D]'>
             <Header/>
-            <section className='pt-10 pl-10 flex justify-between h-[600px]'>
-                <div className='flex flex-col justify-center'>
-                    <h1 className='text-gray-100 font-bold text-[70px] ml-10'>HI, WE ARE ELICA</h1>
-                    <p className='ml-10 text-gray-100 text-[35px]'> 
+            <section className='h-screen px-6 flex flex-col relative isolate pt-48 lg:flex lg:flex-row lg:justify-around lg:items-center lg:pt-0 '>
+                <div className="absolute inset-x-0 -bottom-2 md:bottom-10 -z-10 transform-gpu blur-[7rem] overflow-hidden sm:-top-54" aria-hidden="true">
+                    <div className="relative left-[15rem] h-[20rem] md:h-[15rem] lg:h-[65rem] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-purple-950 to-purple-950 md:left-[calc(100%-24rem)] lg:left-[calc(100%-5rem)] sm:w-[72.1875rem]"></div>
+                </div>
+                <div className='flex flex-col justify-start items-center text-center h-80 lg:w-1/2 lg:h-auto'>
+                    <h1 id='title' className='text-gray-100 font-bold text-5xl h-auto'>HI, WE ARE ELICA</h1>
+                    <p className='text-gray-100 text-[30px] h-auto'> 
                         We{' '}
-                        <span className='text-purple-500 font-bold'>
+                        <span id='title' className='text-purple-500 font-bold'>
                             <Typewriter 
                                 words={['are developers.', 'can take your business to the next level.','are professionals.']}
                                 loop={true}
@@ -28,16 +31,13 @@ const Home = () => {
                         </span>
                     </p>
                 </div>
-                <div>
-                    <img src={imagen} alt="" className='w-[1000px]  rounded-sm'/>
+                <div className='lg:w-1/2 hidden lg:flex lg:justify-center lg:items-center'>
+                    <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703606411/Proyecto%20Final/Pngtree_modern_flat_design_concept_of_5332895_urwd9k.png' alt="" className='w-[40rem]'/>
                 </div>
             </section>
-            <section className='mt-[300px]'>
+            {/* <section className='mt-[300px]'>
                 <OurService/>
-            </section>
-            <section className='mt-[200px]'>
-                <WhyUs/>
-            </section>
+            </section> */}
         </div>
     );
 };
