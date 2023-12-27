@@ -1,12 +1,16 @@
 import './App.css'
 import Home from './views/Home/Home'
+import WhatsappButton from './components/WhatsappButton/WhatsappButton'
+import { Suspense } from 'react'
 
 function App() {
+  
 
   return (
-      <div>
+      <Suspense fallback="Cargando traducción">
         <Home/>
-      </div>
+        <WhatsappButton/>
+      </Suspense>
   )
 }
 

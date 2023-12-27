@@ -1,52 +1,61 @@
 import React from "react";
-import img from './img/five-stars.png'
 import { DevicePhoneMobileIcon, PencilSquareIcon, Cog6ToothIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from 'react-i18next';
 
-const features = [
-  {
-    name: 'Custom web design',
-    description:
-      'We translate your idea into a modern website.',
-    icon: PencilSquareIcon,
-  },
-  {
-    name: 'Responsive design',
-    description:
-      'Our websites work perfectly on all screen sizes.',
-    icon: DevicePhoneMobileIcon,
-  },
-  {
-    name: 'Continuous mantainance',
-    description:
-      'We offer 1 month of free mantainance.',
-    icon: Cog6ToothIcon,
-  },
-  {
-    name: 'E-commerce website',
-    description:
-      'We empower your online store with intuitive and secure features.',
-    icon: ShoppingCartIcon,
-  },
-]
+
 
 const OurService = () => {
+  
+  const { t } = useTranslation()
+  
+  const features = [
+    {
+      id: 1,
+      name: <span>{t("customWeb")}</span>,
+      description:
+        <span>{t("customInfo")}</span>,
+      icon: PencilSquareIcon,
+    },
+    {
+      id: 2,
+      name: <span>{t("responsive")}</span>,
+      description:
+        <span>{t("responsiveInfo")}</span>,
+      icon: DevicePhoneMobileIcon,
+    },
+    {
+      id: 3,
+      name: <span>{t("mantainance")}</span>,
+      description:
+        <span>{t("mantainanceInfo")}</span>,
+      icon: Cog6ToothIcon,
+    },
+    {
+      id: 4,
+      name: <span>{t("e-commerce")}</span>,
+      description:
+        <span>{t("e-commerceInfo")}</span>,
+      icon: ShoppingCartIcon,
+    },
+  ]
+
   return (
-    <div className="h-full w-full bg-[#0D0D0D] z-50">
-      <h1 className="text-white font-bold text-[40px] text-center m-0">
-        Our Service
+    <div id="service" className="h-full w-full bg-[#0D0D0D] z-50">
+      <h1 className="text-white font-bold text-[40px] text-center m-0 cursor-default">
+        {t("ourService")}
       </h1>
       <div className='bg-gradient-to-tr from-purple-950 to-purple-800'>
         <div className="mx-auto mt-10 max-w-3xl lg:w-full py-10 px-10 lg:px-0">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 md:max-w-none md:grid-cols-2 md:gap-y-16">
             {features.map((feature) => (
-              <div key={feature.name} className="relative pl-16">
+              <div key={feature.id} className="relative pl-16">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-xl bg-white shadow-md">
                     <feature.icon className="h-6 w-6 text-purple-700" aria-hidden="true"/>
                   </div>
-                  <p className='text-lg text-white font-semibold'>{feature.name}</p>
+                  <p className='text-lg text-white font-semibold cursor-default'>{feature.name}</p>
                 </dt>
-                <dd className="mt-2 text-sm text-white opacity-55 font-normal">{feature.description}</dd>
+                <dd className="mt-2 text-sm text-white opacity-55 font-normal cursor-default">{feature.description}</dd>
               </div>
             ))}
           </dl>
