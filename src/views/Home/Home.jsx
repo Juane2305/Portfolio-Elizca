@@ -1,9 +1,9 @@
 import React from 'react';
-import imagen from './img/imagen-inicio.jpg'
 import {Typewriter} from 'react-simple-typewriter'
 import WhyUs from '../../components/WhyUs/WhyUs';
 import OurService from '../../components/OurService/OurService';
 import Header from '../../components/Header/Header';
+import ContactUs from '../../components/ContactUs/ContactUs';
 
 const Home = () => {
     return (
@@ -40,6 +40,9 @@ const Home = () => {
             </section>
             <section>
                 <WhyUs/>
+            </section>
+            <section>
+                <ContactUs/>
             </section>
         </div>
     );
