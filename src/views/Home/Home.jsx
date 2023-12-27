@@ -4,6 +4,9 @@ import {Typewriter} from 'react-simple-typewriter'
 import WhyUs from '../../components/WhyUs/WhyUs';
 import OurService from '../../components/OurService/OurService';
 import Header from '../../components/Header/Header';
+import OurProjects from '../../components/OurProjects/OurProjects';
+import Footer from '../../components/Footer/Footer';
+
 
 const Home = () => {
     return (
@@ -41,6 +44,10 @@ const Home = () => {
             <section>
                 <WhyUs/>
             </section>
+            <section>
+                <OurProjects/>
+            </section>
+            <Footer/>
         </div>
     );
 };

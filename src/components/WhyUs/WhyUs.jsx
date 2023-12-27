@@ -3,7 +3,7 @@ import './style/styles.css';
 
 const WhyUs = () => {
     return (
-      <div className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-10">
+      <div className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-28">
         <h1 className="text-gray-100 font-bold text-[40px] text-center lg:mt-0">
           Why ELICA?
         </h1>
