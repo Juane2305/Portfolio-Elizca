@@ -2,16 +2,14 @@ import React from 'react';
 import './style/styles.css';
 
 const WhyUs = () => {
-
-
     return (
-      <div className="h-full w-full bg-[#0D0D0D] pt-56 lg:pt-0">
-        <h1 className="text-gray-100 font-bold text-[40px] text-center sm:mt-40 lg:mt-0">
+      <div className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-10">
+        <h1 className="text-gray-100 font-bold text-[40px] text-center lg:mt-0">
           Why ELICA?
         </h1>
         <section className="flex justify-center mt-5">
-          <h2 className="text-gray-100 font-semibold text-[20px] text-center w-3/4">
-          In an ever-evolving digital world, your company's online presence is more crucial than ever. At ELICA, we pride ourselves on being your trusted partner in creating exceptional web experiences. Here are some compelling reasons to choose us as your web development team:
+          <h2 className="text-white opacity-70 font-semibold text-[20px] text-center w-3/4">
+          In an ever-evolving digital world, <span className='text-purple-700'>your company's</span> online presence is more crucial than ever. At <span className='text-purple-700'>ELICA</span>, we pride ourselves on being your trusted partner in creating <span className='text-purple-700'>exceptional web experiences</span>. Here are some compelling reasons to choose us as your web development team:
           </h2>
         </section>
         <section className='flex justify-center mt-10'>
@@ -143,7 +141,7 @@ const WhyUs = () => {
         </main>
         </section>
         <section className='flex justify-center mt-7'>
-            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2'>At ELICA, we don't just build websites; we build lasting partnerships. Trust us to take your online presence to the next level.</h2>
+            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70'>At <span className='text-purple-700'>ELICA</span>, we don't just build <span className='text-purple-700'>websites</span>; we build lasting <span className='text-purple-700'>partnerships</span>. Trust us to take your online presence to the <span className='text-purple-700'>next level</span>.</h2>
         </section>
       </div>
     );
