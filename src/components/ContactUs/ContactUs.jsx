@@ -43,11 +43,11 @@ const ContactUs = () => {
 
 
     return (
-      <div id='contact' className="h-full w-full bg-[#0D0D0D] pt-48">
-        <h1 className="text-gray-100 font-bold text-[40px] text-center cursor-default">
+      <div id='contact' className="h-full w-full bg-[#0D0D0D] ">
+        <h1 className="text-gray-100 font-bold text-[40px] text-center cursor-default m-0">
           {t("yourIdea")}
         </h1>
-        <section className='flex justify-center mt-20 mx-5 sm:mx-0'>
+        <section className='flex justify-center pt-10 mx-5 sm:mx-0'>
           <div className="bg-white px-8 pb-8 rounded-lg shadow-lg max-w-sm w-full mb-20">
             <div className="flex justify-center mb-6">
               

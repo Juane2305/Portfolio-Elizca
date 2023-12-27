@@ -39,8 +39,8 @@ export default function Header() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div>
-                <div className="flex flex-1 items-center sm:justify-evenly">
+              <div className='w-full'>
+                <div className="flex flex-1 justify-start items-center ">
                   <div className="flex flex-shrink-0">
                     <img src={logo} alt="" className='w-28'/>
                   </div>
@@ -61,7 +61,7 @@ export default function Header() {
                       ))}
                     </div>
                   </div>
-              <div className='ml-5'>
+              <div className='absolute hidden lg:block -right-24'>
                 <Switcher7/>
               </div>
                 </div>
@@ -73,7 +73,7 @@ export default function Header() {
             <div className="space-y-1 px-6 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
-                  key={item.name}
+                  key={item.id}
                   as="a"
                   href={item.href}
                   className={classNames(
@@ -85,6 +85,9 @@ export default function Header() {
                   {item.name}
                 </Disclosure.Button>
               ))}
+              <div className='rounded-md px-3 py-2 text-base text-center font-medium  flex justify-center items-center'>
+                <Switcher7/>
+              </div>
             </div>
           </Disclosure.Panel>
         </>

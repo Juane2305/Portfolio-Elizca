@@ -20,14 +20,14 @@ const OurProjects = () => {
                 </div>
             </div>
            
-            <div className="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 lg:bottom-8 left-1/2 bg-purple-400 p-2 rounded-full">
+            <div className="absolute z-10 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 lg:bottom-8 left-1/2 bg-purple-400 p-2 rounded-full">
                 <button type="button" className="w-2 h-2 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
                 <button type="button" className="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
                 <button type="button" className="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
                 <button type="button" className="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
             </div>
         
-            <button type="button" className="absolute right-[21.8rem] sm:right-[32rem] lg:right-[50rem] top-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+            <button type="button" className="absolute right-[21.8rem] sm:right-[32rem] lg:right-[50rem] top-0 z-10 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
                 <span className="inline-flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 sm:bg-purple-700 rounded-full transform hover:scale-105 duration-300">
                     <svg className="w-4 h-4 text-white ring-black rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4"/>
@@ -35,7 +35,7 @@ const OurProjects = () => {
                     <span className="sr-only">Previous</span>
                 </span>
             </button>
-            <button type="button" className="absolute left-[21.8rem] sm:left-[32rem] lg:left-[50rem] top-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+            <button type="button" className="absolute left-[21.8rem] sm:left-[32rem] lg:left-[50rem] top-0 z-10 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
                 <span className="inline-flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 sm:bg-purple-700 rounded-full transform hover:scale-105 duration-300">
                     <svg className="w-4 h-4 text-white ring-black rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>

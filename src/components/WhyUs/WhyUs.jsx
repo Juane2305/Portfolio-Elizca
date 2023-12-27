@@ -7,7 +7,7 @@ const WhyUs = () => {
     const { t } = useTranslation()
 
     return (
-      <div id='why' className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-10">
+      <div id='why' className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-28">
         <h1 className="text-gray-100 font-bold text-[40px] text-center lg:mt-0 cursor-default">
           {t("why")}
         </h1>
