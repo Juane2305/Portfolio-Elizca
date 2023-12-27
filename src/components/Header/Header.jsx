@@ -1,20 +1,26 @@
 import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useTranslation } from 'react-i18next';
+import Switcher7 from '../Switcher/Switcher';
+import logo from './img/logo.png';
 
-const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Our service', href: '#', current: false },
-  { name: 'Why Elica?', href: '#', current: false },
-  { name: 'Our projects', href: '#', current: false },
-  { name: 'Contact us', href: '#', current: false },
-]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Header() {
+  
+  const { t } = useTranslation()
+  
+  const navigation = [
+    {id:1, name: <span>{t("home")}</span>, href: '#', current: true },
+    {id:2, name: <span>{t("service")}</span>, href: '#service', current: false },
+    {id:3, name: <span>{t("whyElica")}</span>, href: '#why', current: false },
+    {id:4, name: <span>{t("ourProjects")}</span>, href: '#projects', current: false },
+    {id:5, name: <span>{t("contact")}</span>, href: '#contact', current: false },
+  ]
   return (
     <Disclosure as="nav" className="fixed z-20 w-full bg-black bg-opacity-25 backdrop-filter backdrop-blur-lg">
       {({ open }) => (
@@ -33,26 +39,31 @@ export default function Header() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-start sm:items-center">
-                <div className="flex flex-shrink-0">
-                  <h1 className='text-white'>LOGO</h1>
-                </div>
-                <div className="hidden lg:ml-6 lg:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'transform hover:scale-110 duration-500 text-purple-700' : 'text-gray-300 hover:text-purple-700 transform hover:scale-110 duration-500',
-                          'rounded-md px-3 py-2 text-lg font-semibold'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+              <div>
+                <div className="flex flex-1 items-center sm:justify-evenly">
+                  <div className="flex flex-shrink-0">
+                    <img src={logo} alt="" className='w-28'/>
                   </div>
+                  <div className="hidden lg:ml-6 lg:block">
+                    <div className="flex space-x-4 ml-7">
+                      {navigation.map((item) => (
+                        <a
+                          key={item.id}
+                          href={item.href}
+                          className={classNames(
+                            item.current ? 'transform hover:scale-110 duration-500 text-purple-700' : 'text-gray-300 hover:text-purple-700 transform hover:scale-110 duration-500',
+                            'rounded-md px-3 py-2 text-lg font-semibold'
+                          )}
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+              <div className='ml-5'>
+                <Switcher7/>
+              </div>
                 </div>
               </div>
             </div>

@@ -1,0 +1,51 @@
+{
+    "home": "Home",
+    "service": "Our service",
+    "whyElica": "Why Elica?",
+    "ourProjects": "Our projects",
+    "contact": "Contact us",
+    
+    "we": "We",
+    
+    "title": "HI, WE ARE ELICA",
+    "ourService": "Our Service",
+    "customWeb" : "Custom web design",
+    "customInfo" : "We translate your idea into a modern website.",
+    "responsive": "Responsive design",
+    "responsiveInfo": "Our websites work perfectly on all screen sizes.",
+    "mantainance": "Continuous mantainance",
+    "mantainanceInfo": "We offer 1 month of free mantainance.",
+    "e-commerce": "E-commerce website",
+    "e-commerceInfo": "We empower your online store with intuitive and secure features.",
+
+    "why": "Why ELICA?",
+    "infoWhy": "In an ever-evolving digital world, your company's online presence is more crucial than ever. At ELICA, we pride ourselves on being your trusted partner in creating exceptional web experiences. Here are some compelling reasons to choose us as your web development team:",
+
+    "expertise": "Specialized Expertise",
+    "expertiseInfo": "With years of experience in web development, we have honed our skills to create sites that are not only visually appealing, but also highly functional. From simple informational pages to complex web applications, we have the expertise to tackle any challenge.",
+
+    "personalized": "Personalized Approach",
+    "personalizedInfo": "We understand that each company is unique. That's why we take a customized approach to every project. We work closely with you to understand your objectives, your audience and your specific requirements. This allows us to deliver solutions that are perfectly tailored to your individual needs.",
+
+    "innovative": "Innovative Design",
+    "innovativeInfo": "Design matters. We create visual experiences that stand out and captivate your visitors from the very first moment. Our design team combines creativity and functionality to deliver websites that not only look good, but also improve usability and user interaction.",
+
+    "quality": "Commitment to Quality",
+    "qualityInfo": "Quality is our top priority. From planning to implementation and beyond, we strive to exceed expectations. We perform extensive testing to ensure your site is robust, secure and ready to excel in the competitive digital world.",
+
+    "support": "Ongoing Support",
+    "supportInfo": "Our relationship doesn't end with the site launch. We offer strong ongoing support to ensure that your online presence remains effective and relevant as trends and technologies evolve.",
+
+    "trustUs": "At ELICA, we don't just build websites; we build lasting partnerships. Trust us to take your online presence to the next level.",
+
+
+
+    "yourIdea": "Tell us your idea!",
+    "contactUs": "Contact us",
+
+    "name": "Your Name *",
+    "email": "Email Adress *",
+    "message": "Message *",
+
+    "send": "Send message"
+}

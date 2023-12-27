@@ -1,15 +1,19 @@
 import React from 'react';
 import './style/styles.css';
+import { useTranslation } from 'react-i18next';
 
 const WhyUs = () => {
+
+    const { t } = useTranslation()
+
     return (
-      <div className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-10">
-        <h1 className="text-gray-100 font-bold text-[40px] text-center lg:mt-0">
-          Why ELICA?
+      <div id='why' className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-10">
+        <h1 className="text-gray-100 font-bold text-[40px] text-center lg:mt-0 cursor-default">
+          {t("why")}
         </h1>
         <section className="flex justify-center mt-5">
-          <h2 className="text-white opacity-70 font-semibold text-[20px] text-center w-3/4">
-          In an ever-evolving digital world, <span className='text-purple-700'>your company's</span> online presence is more crucial than ever. At <span className='text-purple-700'>ELICA</span>, we pride ourselves on being your trusted partner in creating <span className='text-purple-700'>exceptional web experiences</span>. Here are some compelling reasons to choose us as your web development team:
+          <h2 className="text-white opacity-70 font-semibold text-[20px] text-center w-3/4 cursor-default">
+          {t("infoWhy")}
           </h2>
         </section>
         <section className='flex justify-center mt-10'>
@@ -21,7 +25,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck1"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck1">
                                 <span className="text-gray-100 font-thin text-xl">
-                                    Specialized Expertise
+                                    {t("expertise")}
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -33,8 +37,8 @@ const WhyUs = () => {
                             </header>
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
-                                    <p className='px-4'>
-                                    With years of experience in web development, we have honed our skills to create sites that are not only visually appealing, but also highly functional. From simple informational pages to complex web applications, we have the expertise to tackle any challenge.
+                                    <p className='px-4 cursor-default'>
+                                    {t("expertiseInfo")}
                                     </p>
                                 </div>
                             </div>
@@ -45,7 +49,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck2"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck2">
                                 <span className="text-gray-100 font-thin text-xl">
-                                Personalized Approach
+                                {t("personalized")}
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -57,8 +61,8 @@ const WhyUs = () => {
                             </header>
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
-                                    <p className='px-4'>
-                                    We understand that each company is unique. That's why we take a customized approach to every project. We work closely with you to understand your objectives, your audience and your specific requirements. This allows us to deliver solutions that are perfectly tailored to your individual needs.
+                                    <p className='px-4 cursor-default'>
+                                    {t("personalizedInfo")}
                                     </p>
                                 </div>
                             </div>
@@ -69,7 +73,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck3"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck3">
                                 <span className="text-gray-100 font-thin text-xl">
-                                    Innovative Design
+                                    {t("innovative")}
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                     
@@ -81,8 +85,8 @@ const WhyUs = () => {
                             </header>
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
-                                    <p className='px-4'>
-                                    Design matters. We create visual experiences that stand out and captivate your visitors from the very first moment. Our design team combines creativity and functionality to deliver websites that not only look good, but also improve usability and user interaction.
+                                    <p className='px-4 cursor-default'>
+                                    {t("innovativeInfo")}
                                     </p>
                                 </div>
                             </div>
@@ -93,7 +97,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck1"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck1">
                                 <span className="text-gray-100 font-thin text-xl">
-                                    Commitment to Quality
+                                    {t("quality")}
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -105,8 +109,8 @@ const WhyUs = () => {
                             </header>
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
-                                    <p className='px-4'>
-                                    Quality is our top priority. From planning to implementation and beyond, we strive to exceed expectations. We perform extensive testing to ensure your site is robust, secure and ready to excel in the competitive digital world.
+                                    <p className='px-4 cursor-default'>
+                                    {t("qualityInfo")}
                                     </p>
                                 </div>
                             </div>
@@ -117,7 +121,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck1"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck1">
                                 <span className="text-gray-100 font-thin text-xl">
-                                    Ongoing Support
+                                    {t("support")}
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -129,8 +133,8 @@ const WhyUs = () => {
                             </header>
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
-                                    <p className='px-4'>
-                                    Our relationship doesn't end with the site launch. We offer strong ongoing support to ensure that your online presence remains effective and relevant as trends and technologies evolve.
+                                    <p className='px-4 cursor-default'>
+                                    {t("supportInfo")}
                                     </p>
                                 </div>
                             </div>
@@ -141,7 +145,7 @@ const WhyUs = () => {
         </main>
         </section>
         <section className='flex justify-center mt-7'>
-            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70'>At <span className='text-purple-700'>ELICA</span>, we don't just build <span className='text-purple-700'>websites</span>; we build lasting <span className='text-purple-700'>partnerships</span>. Trust us to take your online presence to the <span className='text-purple-700'>next level</span>.</h2>
+            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default'>{t("trustUs")}</h2>
         </section>
       </div>
     );
