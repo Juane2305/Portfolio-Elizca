@@ -7,11 +7,11 @@ const WhyUs = () => {
 
     return (
       <div id='why' className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-28">
-        <h1 className="text-gray-100 font-bold text-[40px] text-center lg:mt-0 cursor-default">
+        <h1 className="text-gray-100 font-bold text-[30px] md:text-[40px] text-center lg:mt-0 cursor-default">
         Why ELICA?
         </h1>
         <section className="flex justify-center mt-5">
-          <h2 className="text-white opacity-70 font-semibold text-[20px] text-center w-3/4 cursor-default">
+          <h2 className="text-white opacity-70 font-semibold sm:text-[20px] text-[15px] text-center w-3/4 cursor-default">
           In an ever-evolving digital world, your company's online presence is more crucial than ever. At ELICA, we pride ourselves on being your trusted partner in creating exceptional web experiences. Here are some compelling reasons to choose us as your web development team:
           </h2>
         </section>

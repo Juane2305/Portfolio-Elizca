@@ -41,7 +41,7 @@ const ContactUs = () => {
 
     return (
       <div id='contact' className="h-full w-full bg-[#0D0D0D] ">
-        <h1 className="text-gray-100 font-bold text-[40px] text-center cursor-default m-0">
+        <h1 className="text-gray-100 font-bold sm:text-[40px] text-[30px] text-center cursor-default m-0">
         Tell us your idea!
         </h1>
         <section className='flex justify-center pt-10 mx-5 sm:mx-0'>

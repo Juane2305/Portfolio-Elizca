@@ -5,8 +5,8 @@ import imc from '../../public/imc.png'
 
 const OurProjects = () => {
   return (
-    <div id='projects' className='h-full flex flex-col justify-center items-center bg-[#0D0D0D] pt-10 pb-10 lg:pt-28 lg:pb-24'>
-        <h1 className="text-white font-bold text-[40px] text-center m-0">Our projects</h1>
+    <div id='projects' className='h-full flex flex-col justify-center items-center bg-[#0D0D0D] pt-10 pb-10 lg:pt-20 lg:pb-24'>
+        <h1 className="text-white font-bold text-[30px] sm:text-[40px] text-center m-0">Our projects</h1>
         <div id="indicators-carousel" className="relative w-[15rem] pt-10 sm:w-[30rem] lg:w-[45rem] lg:pt-5" data-carousel="static">
             <div className="relative h-44 overflow-hidden rounded-lg sm:h-80 lg:h-[30rem] z-10">
                 <div className="hidden duration-700 ease-in-out" data-carousel-item="active">

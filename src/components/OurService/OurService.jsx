@@ -36,7 +36,7 @@ const OurService = () => {
 
   return (
     <div id="service" className="h-full w-full bg-[#0D0D0D] z-50">
-      <h1 className="text-white font-bold text-[40px] text-center m-0 cursor-default">
+      <h1 className="text-white font-bold sm:text-[40px] text-[30px] text-center m-0 cursor-default">
        Our Service
       </h1>
       <div className='bg-gradient-to-tr from-purple-950 to-purple-800'>
