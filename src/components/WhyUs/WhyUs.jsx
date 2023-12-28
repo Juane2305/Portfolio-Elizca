@@ -8,11 +8,11 @@ const WhyUs = () => {
     return (
       <div id='why' className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-28">
         <h1 className="text-gray-100 font-bold text-[30px] md:text-[40px] text-center lg:mt-0 cursor-default">
-        Why ELICA?
+        Why ELIZCA?
         </h1>
         <section className="flex justify-center mt-5">
           <h2 className="text-white opacity-70 font-semibold sm:text-[20px] text-[15px] text-center w-3/4 cursor-default">
-          In an ever-evolving digital world, your company's online presence is more crucial than ever. At ELICA, we pride ourselves on being your trusted partner in creating exceptional web experiences. Here are some compelling reasons to choose us as your web development team:
+          In an ever-evolving digital world, <span className='text-purple-500'>your company's</span> online presence is more crucial than ever. At <span className='text-purple-500'>ELIZCA</span>, we pride ourselves on being your trusted partner in creating <span className='text-purple-500'>exceptional web experiences</span>. Here are some compelling reasons to choose us as your web development team:
           </h2>
         </section>
         <section className='flex justify-center mt-10'>
@@ -144,7 +144,7 @@ const WhyUs = () => {
         </main>
         </section>
         <section className='flex justify-center mt-7'>
-            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default'></h2>
+            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default pb-24 pt-8'>At <span className='text-purple-700'>ELIZCA</span>, we don't just build <span className='text-purple-700'>websites</span>; we build lasting <span className='text-purple-700'>partnerships</span>. Trust us to take your online presence to the <span className='text-purple-700'>next level</span>.</h2>
         </section>
       </div>
     );

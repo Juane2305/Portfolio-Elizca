@@ -1,6 +1,6 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import logo from './img/logo.png';
+import logo from '../../public/logo.png';
 
 
 function classNames(...classes) {
@@ -12,7 +12,7 @@ export default function Header() {
   const navigation = [
     {id:1, name: <span>Home</span>, href: '#home', current: true },
     {id:2, name: <span>Our Service</span>, href: '#service', current: false },
-    {id:3, name: <span>Why Elica?</span>, href: '#why', current: false },
+    {id:3, name: <span>Why Elizca?</span>, href: '#why', current: false },
     {id:5, name: <span>Contact us</span>, href: '#contact', current: false },
   ]
   return (
@@ -36,7 +36,7 @@ export default function Header() {
               <div className='w-full'>
                 <div className="flex flex-1 justify-start items-center ">
                   <div className="flex flex-shrink-0">
-                    <img src={logo} alt="" className='w-28'/>
+                    <a href="#home"><img src={logo} alt="" className='w-28'/></a>
                   </div>
                   <div className="hidden lg:ml-6 lg:block">
                     <div className="flex space-x-4 ml-7">
