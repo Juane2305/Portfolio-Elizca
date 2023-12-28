@@ -42,7 +42,7 @@ const ContactUs = () => {
     return (
       <div id='contact' className="h-full w-full bg-[#0D0D0D] ">
         <h1 className="text-gray-100 font-bold text-[40px] text-center cursor-default m-0">
-          
+        Tell us your idea!
         </h1>
         <section className='flex justify-center pt-10 mx-5 sm:mx-0'>
           <div className="bg-white px-8 pb-8 rounded-lg shadow-lg max-w-sm w-full mb-20">
@@ -50,7 +50,7 @@ const ContactUs = () => {
               
             </div>
             <h2 className="text-2xl font-semibold text-center mb-5 cursor-default">
-           
+            Contact us
             </h2>
             <form ref={refForm} onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -58,7 +58,7 @@ const ContactUs = () => {
                   htmlFor="username"
                   className="block text-gray-700 text-sm font-semibold mb-2"
                 >
-              
+                  Your Name *
                 </label>
                 <input
                   type="text"
@@ -76,7 +76,7 @@ const ContactUs = () => {
                   htmlFor="email"
                   className="block text-gray-700 text-sm font-semibold mb-2"
                 >
-              
+                  Email Adress *
                 </label>
                 <input
                   type="email"
@@ -94,7 +94,7 @@ const ContactUs = () => {
                   htmlFor="message"
                   className="block text-gray-700 text-sm font-semibold mb-2"
                 >
-              
+                  Message *
                 </label>
                 <textarea
                   name='message'
@@ -109,7 +109,7 @@ const ContactUs = () => {
                 type="submit"
                 className="w-full bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
               >
-               
+               Send message
               </button>
             </form>
           </div>

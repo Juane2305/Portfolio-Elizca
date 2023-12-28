@@ -10,11 +10,11 @@ function classNames(...classes) {
 export default function Header() {
   
   const navigation = [
-    {id:1, name: <span></span>, href: '#home', current: true },
-    {id:2, name: <span></span>, href: '#service', current: false },
-    {id:3, name: <span></span>, href: '#why', current: false },
-    {id:4, name: <span></span>, href: '#projects', current: false },
-    {id:5, name: <span></span>, href: '#contact', current: false },
+    {id:1, name: <span>Home</span>, href: '#home', current: true },
+    {id:2, name: <span>Our Service</span>, href: '#service', current: false },
+    {id:3, name: <span>Why Elica?</span>, href: '#why', current: false },
+    {id:4, name: <span>Our Projects</span>, href: '#projects', current: false },
+    {id:5, name: <span>Contact us</span>, href: '#contact', current: false },
   ]
   return (
     <Disclosure as="nav" className="fixed z-20 w-full bg-black bg-opacity-45 backdrop-filter backdrop-blur-lg">
