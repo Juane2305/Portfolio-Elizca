@@ -15,7 +15,7 @@ export default function Header() {
   const { t } = useTranslation()
   
   const navigation = [
-    {id:1, name: <span>{t("home")}</span>, href: '#', current: true },
+    {id:1, name: <span>{t("home")}</span>, href: '#home', current: true },
     {id:2, name: <span>{t("service")}</span>, href: '#service', current: false },
     {id:3, name: <span>{t("whyElica")}</span>, href: '#why', current: false },
     {id:4, name: <span>{t("ourProjects")}</span>, href: '#projects', current: false },

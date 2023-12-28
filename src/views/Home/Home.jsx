@@ -15,7 +15,7 @@ const Home = () => {
     let words1 = i18n.language == 'en' ?  ['are developers.', 'can take your business to the next level.','are professionals.'] : ['desarrolladores.', 'profesionales.', 'capaces de llevar tu negocio al siguiente nivel.']
 
     return (
-        <div className='h-screen w-full bg-[#0D0D0D]'>
+        <div  id='home' className='h-screen w-full bg-[#0D0D0D]'>
             <Header/>
             <section className='h-screen px-6 flex flex-col relative isolate pt-48 lg:flex lg:flex-row lg:justify-around lg:items-center lg:pt-0'>
                 <div className="absolute inset-x-0 bottom-28 md:bottom-44 -z-10 transform-gpu blur-[7rem] overflow-hidden sm:-top-54" aria-hidden="true">
