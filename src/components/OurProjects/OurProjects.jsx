@@ -1,4 +1,7 @@
-
+import auto from '../../public/auto.png'
+import totebags from '../../public/totebags.png'
+import dogs from '../../public/dogs.png'
+import imc from '../../public/imc.png'
 
 const OurProjects = () => {
   return (
@@ -7,16 +10,16 @@ const OurProjects = () => {
         <div id="indicators-carousel" className="relative w-[15rem] pt-10 sm:w-[30rem] lg:w-[45rem] lg:pt-5" data-carousel="static">
             <div className="relative h-44 overflow-hidden rounded-lg sm:h-80 lg:h-[30rem] z-10">
                 <div className="hidden duration-700 ease-in-out" data-carousel-item="active">
-                    <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1703635365/mdzautomotores.vercel.app__Nest_Hub_Max_nslnoo.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                    <img src={auto} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                 </div>
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1703636291/localhost_5174_home_Nest_Hub_Max_augr8p.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                    <img src={totebags} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                 </div>
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1703638345/localhost_3000_home_Nest_Hub_Max_ykyfiz.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                    <img src={dogs} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                 </div>
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1703638965/bmi-calculator-facurecabarren.vercel.app__Nest_Hub_Max_lxdygj.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                    <img src={imc} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                 </div>
             </div>
            
