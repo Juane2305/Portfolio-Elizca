@@ -61,7 +61,7 @@ export default function Header() {
                       ))}
                     </div>
                   </div>
-              <div className='absolute hidden lg:block -right-24'>
+              <div className='absolute hidden lg:block -right-2'>
                 <Switcher7/>
               </div>
                 </div>
