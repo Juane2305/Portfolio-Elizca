@@ -8,8 +8,6 @@ const Switcher7 = () => {
 
     const { i18n } = useTranslation()
 
-
-
     const changeLanguage = () => {
         i18n.changeLanguage(i18n.language === 'en'? 'es' : 'en')
     }
