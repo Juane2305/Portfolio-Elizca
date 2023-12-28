@@ -13,7 +13,7 @@ export default function Header() {
     {id:1, name: <span>Home</span>, href: '#home', current: true },
     {id:2, name: <span>Our Service</span>, href: '#service', current: false },
     {id:3, name: <span>Why Elizca?</span>, href: '#why', current: false },
-    {id:4, name: <span>Our Projects</span>, href: '#projects', current: false },
+    // {id:4, name: <span>Our Projects</span>, href: '#projects', current: false },
     {id:5, name: <span>Contact us</span>, href: '#contact', current: false },
   ]
   return (

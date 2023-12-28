@@ -44,9 +44,9 @@ const Home = () => {
             <section>
                 <WhyUs/>
             </section>
-            <section>
+            {/* <section>
                 <OurProjects/>
-            </section>
+            </section> */}
             <section>
                 <ContactUs/>
             </section>
