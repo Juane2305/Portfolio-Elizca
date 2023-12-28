@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx,vue}', 'node_modules/flowbite-react/lib/esm/**/*.js'],
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx,vue}', 'node_modules/flowbite-react/lib/esm/**/*.js', 'node_modules/preline/dist/*.js',],
   theme: {
     extend: {
       fontFamily: {
@@ -17,5 +17,5 @@ module.exports = {
       }
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('flowbite/plugin'), require('preline/plugin'),],
 }

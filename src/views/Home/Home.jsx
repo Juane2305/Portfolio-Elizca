@@ -10,7 +10,7 @@ import ContactUs from '../../components/ContactUs/ContactUs';
 const Home = () => {
 
     return (
-        <div  id='home' className='h-screen w-full bg-[#0D0D0D]'>
+        <div  id='home' className='h-full w-full bg-[#0D0D0D]'>
             <Header/>
             <section className='h-screen px-6 flex flex-col relative isolate pt-36 lg:flex lg:flex-row lg:justify-around lg:items-center lg:pt-0'>
                 <div className="absolute inset-x-0 bottom-28 md:bottom-44 -z-10 transform-gpu blur-[7rem] overflow-hidden sm:-top-54" aria-hidden="true">
@@ -44,9 +44,9 @@ const Home = () => {
             <section>
                 <WhyUs/>
             </section>
-            {/* <section>
+            <section>
                 <OurProjects/>
-            </section> */}
+            </section>
             <section>
                 <ContactUs/>
             </section>

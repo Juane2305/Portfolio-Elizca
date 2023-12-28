@@ -40,7 +40,7 @@ const ContactUs = () => {
 
 
     return (
-      <div id='contact' className="h-full w-full bg-[#0D0D0D] ">
+      <div id='contact' className="h-full w-full bg-[#0D0D0D] py-32">
         <h1 className="text-gray-100 font-bold sm:text-[40px] text-[30px] text-center cursor-default m-0">
         Tell us your idea!
         </h1>

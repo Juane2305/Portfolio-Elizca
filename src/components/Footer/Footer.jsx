@@ -16,6 +16,9 @@ const Footer = () => {
                         <a href="#why" className="hover:underline me-4 md:me-6">Why Elizca?</a>
                     </li>
                     <li>
+                        <a href="#projects" className="hover:underline me-4 md:me-6">Our Projects</a>
+                    </li>
+                    <li>
                         <a href="#contact" className="hover:underline">Contact us</a>
                     </li>
                 </ul>
