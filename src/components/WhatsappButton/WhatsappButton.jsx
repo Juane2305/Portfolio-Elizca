@@ -1,4 +1,3 @@
-import React from 'react';
 import whatsapp from './img/whatsapp.png'
 
 const phoneNumber = '+542612404253'; // Acá tienen que agregar su número de teléfono

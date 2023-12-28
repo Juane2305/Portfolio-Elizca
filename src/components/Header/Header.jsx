@@ -1,8 +1,5 @@
-import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { useTranslation } from 'react-i18next';
-import Switcher7 from '../Switcher/Switcher';
 import logo from './img/logo.png';
 
 
@@ -12,14 +9,12 @@ function classNames(...classes) {
 
 export default function Header() {
   
-  const { t } = useTranslation()
-  
   const navigation = [
-    {id:1, name: <span>{t("home")}</span>, href: '#home', current: true },
-    {id:2, name: <span>{t("service")}</span>, href: '#service', current: false },
-    {id:3, name: <span>{t("whyElica")}</span>, href: '#why', current: false },
-    {id:4, name: <span>{t("ourProjects")}</span>, href: '#projects', current: false },
-    {id:5, name: <span>{t("contact")}</span>, href: '#contact', current: false },
+    {id:1, name: <span></span>, href: '#home', current: true },
+    {id:2, name: <span></span>, href: '#service', current: false },
+    {id:3, name: <span></span>, href: '#why', current: false },
+    {id:4, name: <span></span>, href: '#projects', current: false },
+    {id:5, name: <span></span>, href: '#contact', current: false },
   ]
   return (
     <Disclosure as="nav" className="fixed z-20 w-full bg-black bg-opacity-45 backdrop-filter backdrop-blur-lg">
@@ -61,9 +56,6 @@ export default function Header() {
                       ))}
                     </div>
                   </div>
-              <div className='absolute hidden lg:block -right-2'>
-                <Switcher7/>
-              </div>
                 </div>
               </div>
             </div>
@@ -85,9 +77,6 @@ export default function Header() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-              <div className='rounded-md px-3 py-2 text-base text-center font-medium  flex justify-center items-center'>
-                <Switcher7/>
-              </div>
             </div>
           </Disclosure.Panel>
         </>

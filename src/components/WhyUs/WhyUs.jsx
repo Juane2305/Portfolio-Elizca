@@ -1,19 +1,18 @@
-import React from 'react';
 import './style/styles.css';
-import { useTranslation } from 'react-i18next';
+
 
 const WhyUs = () => {
 
-    const { t } = useTranslation()
+ 
 
     return (
       <div id='why' className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-28">
         <h1 className="text-gray-100 font-bold text-[40px] text-center lg:mt-0 cursor-default">
-          {t("why")}
+          
         </h1>
         <section className="flex justify-center mt-5">
           <h2 className="text-white opacity-70 font-semibold text-[20px] text-center w-3/4 cursor-default">
-          {t("infoWhy")}
+         
           </h2>
         </section>
         <section className='flex justify-center mt-10'>
@@ -25,7 +24,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck1"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck1">
                                 <span className="text-gray-100 font-thin text-xl">
-                                    {t("expertise")}
+                                  
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -38,7 +37,7 @@ const WhyUs = () => {
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
                                     <p className='px-4 cursor-default'>
-                                    {t("expertiseInfo")}
+                                    
                                     </p>
                                 </div>
                             </div>
@@ -49,7 +48,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck2"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck2">
                                 <span className="text-gray-100 font-thin text-xl">
-                                {t("personalized")}
+                              
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -62,7 +61,7 @@ const WhyUs = () => {
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
                                     <p className='px-4 cursor-default'>
-                                    {t("personalizedInfo")}
+                                  
                                     </p>
                                 </div>
                             </div>
@@ -73,7 +72,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck3"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck3">
                                 <span className="text-gray-100 font-thin text-xl">
-                                    {t("innovative")}
+                                   
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                     
@@ -86,7 +85,7 @@ const WhyUs = () => {
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
                                     <p className='px-4 cursor-default'>
-                                    {t("innovativeInfo")}
+                                    
                                     </p>
                                 </div>
                             </div>
@@ -97,7 +96,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck1"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck1">
                                 <span className="text-gray-100 font-thin text-xl">
-                                    {t("quality")}
+                                    
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -110,7 +109,7 @@ const WhyUs = () => {
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
                                     <p className='px-4 cursor-default'>
-                                    {t("qualityInfo")}
+                                    
                                     </p>
                                 </div>
                             </div>
@@ -121,7 +120,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck1"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck1">
                                 <span className="text-gray-100 font-thin text-xl">
-                                    {t("support")}
+                                   
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -134,7 +133,7 @@ const WhyUs = () => {
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
                                     <p className='px-4 cursor-default'>
-                                    {t("supportInfo")}
+                                   
                                     </p>
                                 </div>
                             </div>
@@ -145,7 +144,7 @@ const WhyUs = () => {
         </main>
         </section>
         <section className='flex justify-center mt-7'>
-            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default'>{t("trustUs")}</h2>
+            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default'></h2>
         </section>
       </div>
     );

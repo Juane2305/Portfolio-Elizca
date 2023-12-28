@@ -1,40 +1,35 @@
-import React from "react";
 import { DevicePhoneMobileIcon, PencilSquareIcon, Cog6ToothIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
-import { useTranslation } from 'react-i18next';
-
 
 
 const OurService = () => {
   
-  const { t } = useTranslation()
-  
   const features = [
     {
       id: 1,
-      name: <span>{t("customWeb")}</span>,
+      name: <span></span>,
       description:
-        <span>{t("customInfo")}</span>,
+        <span></span>,
       icon: PencilSquareIcon,
     },
     {
       id: 2,
-      name: <span>{t("responsive")}</span>,
+      name: <span></span>,
       description:
-        <span>{t("responsiveInfo")}</span>,
+        <span></span>,
       icon: DevicePhoneMobileIcon,
     },
     {
       id: 3,
-      name: <span>{t("mantainance")}</span>,
+      name: <span></span>,
       description:
-        <span>{t("mantainanceInfo")}</span>,
+        <span></span>,
       icon: Cog6ToothIcon,
     },
     {
       id: 4,
-      name: <span>{t("e-commerce")}</span>,
+      name: <span></span>,
       description:
-        <span>{t("e-commerceInfo")}</span>,
+        <span></span>,
       icon: ShoppingCartIcon,
     },
   ]
@@ -42,7 +37,7 @@ const OurService = () => {
   return (
     <div id="service" className="h-full w-full bg-[#0D0D0D] z-50">
       <h1 className="text-white font-bold text-[40px] text-center m-0 cursor-default">
-        {t("ourService")}
+       
       </h1>
       <div className='bg-gradient-to-tr from-purple-950 to-purple-800'>
         <div className="mx-auto mt-10 max-w-3xl lg:w-full py-10 px-10 lg:px-0">

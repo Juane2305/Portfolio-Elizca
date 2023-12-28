@@ -5,14 +5,9 @@ import Header from '../../components/Header/Header';
 import OurProjects from '../../components/OurProjects/OurProjects';
 import Footer from '../../components/Footer/Footer';
 import ContactUs from '../../components/ContactUs/ContactUs';
-import { useTranslation } from 'react-i18next';
 
 
 const Home = () => {
-
-    const { t, i18n } = useTranslation()
-    
-    let words1 = i18n.language == 'en' ?  ['are developers.', 'can take your business to the next level.','are professionals.'] : ['desarrolladores.', 'profesionales.', 'capaces de llevar tu negocio al siguiente nivel.']
 
     return (
         <div  id='home' className='h-screen w-full bg-[#0D0D0D]'>
@@ -22,12 +17,11 @@ const Home = () => {
                     <div className="relative left-[15rem] h-[35rem] md:h-[35rem] lg:h-[65rem] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-purple-950 to-purple-950 md:left-[calc(100%-24rem)] lg:left-[calc(100%-5rem)] sm:w-[72.1875rem]"></div>
                 </div>
                 <div className='flex flex-col lg:justify-start items-center text-center h-[10rem] sm:h-60 lg:w-1/2 lg:h-auto'>
-                    <h1 id='title' className='text-gray-100 font-bold text-4xl sm:text-6xl h-auto cursor-default'>{t("title")}</h1>
+                    <h1 id='title' className='text-gray-100 font-bold text-4xl sm:text-6xl h-auto cursor-default'></h1>
                     <p className='text-gray-100 text-[20px] sm:text-[30px] h-auto'> 
-                        <span className='cursor-default'>{t("we")}</span>{' '}
+                        <span className='cursor-default'></span>{' '}
                         <span id='title' className='text-purple-500 font-bold cursor-default'>
                             <Typewriter 
-                                words={words1} 
                                 loop={true}
                                 cursor
                                 cursorStyle='|'

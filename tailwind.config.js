@@ -17,5 +17,5 @@ module.exports = {
       }
     },
   },
-  plugins: [require('tailgrids/plugin'), require('flowbite/plugin')],
+  plugins: [require('flowbite/plugin')],
 }
