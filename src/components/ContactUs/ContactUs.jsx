@@ -40,12 +40,12 @@ const ContactUs = () => {
 
 
     return (
-      <div id='contact' className="h-full w-full bg-[#0D0D0D] py-32">
-        <h1 className="text-gray-100 font-bold sm:text-[40px] text-[30px] text-center cursor-default m-0">
-        Tell us your idea!
-        </h1>
-        <section className='flex justify-center pt-10 mx-5 sm:mx-0'>
-          <div className="bg-white px-8 pb-8 rounded-lg shadow-lg max-w-sm w-full mb-20">
+      <div id='contact' className="h-full w-full bg-[#0D0D0D] py-24">
+        <section className='flex justify-center items-center lg:pt-10 mx-5 sm:mx-0'>
+          <div className='z-10 hidden lg:w-[35rem] lg:flex lg:justify-center lg:items-center'>
+            <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1703865403/contact2_y1f45t.png" alt="" className='z-10 w-[35rem]'/>
+          </div>
+          <div className="bg-white px-8 pb-8 rounded-lg shadow-lg max-w-sm lg:w-1/3 z-10">
             <div className="flex justify-center mb-6">
               
             </div>

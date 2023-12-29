@@ -14,6 +14,8 @@ module.exports = {
         'sombra-bg-footer': '4px 4px 4px 4px rgba(0, 0, 0, 0.711)',
         'sombra-btn-proyects': '1px 1px 2px rgba(0,0,0,0.65)',
         'inset-shadow': 'inset 0px 4px 4px rgba(1, 1, 1, 0.5);',
+        'sombra-morada': '0px 0px 9px 0px rgba(108,43,217,0.75);'
+        
       }
     },
   },

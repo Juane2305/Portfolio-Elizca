@@ -144,7 +144,7 @@ const WhyUs = () => {
         </main>
         </section>
         <section className='flex justify-center mt-7'>
-            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default pb-24 pt-8'>At <span className='text-purple-700'>ELIZCA</span>, we don't just build <span className='text-purple-700'>websites</span>; we build lasting <span className='text-purple-700'>partnerships</span>. Trust us to take your online presence to the <span className='text-purple-700'>next level</span>.</h2>
+            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default  pt-8'>At <span className='text-purple-700'>ELIZCA</span>, we don't just build <span className='text-purple-700'>websites</span>; we build lasting <span className='text-purple-700'>partnerships</span>. Trust us to take your online presence to the <span className='text-purple-700'>next level</span>.</h2>
         </section>
       </div>
     );

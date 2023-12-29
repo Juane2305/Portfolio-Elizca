@@ -44,11 +44,16 @@ const Home = () => {
             <section>
                 <WhyUs/>
             </section>
-            {/* <section>
+            <section>
                 <OurProjects/>
-            </section> */}
+            </section>
             <section>
                 <ContactUs/>
+            </section>
+            <section className='relative isolate'>
+                <div className="absolute inset-x-0 bottom-28 md:bottom-44 -z-10 transform-gpu blur-[12rem] overflow-hidden sm:-top-54" aria-hidden="true">
+                    <div className="relative right-[15rem] h-[35rem] md:h-[35rem] lg:h-[75rem] aspect-[1155/678] w-[36.125rem] translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-purple-950 to-purple-950 md:right-[calc(100%-24rem)] lg:right-[calc(100%-35rem)] sm:w-[72.1875rem]"></div>
+                </div>
             </section>
             <Footer/>
         </div>
