@@ -1,7 +1,9 @@
-import auto from "../../public/auto.png";
-import totebags from "../../public/totebags.png";
-import dogs from "../../public/dogs.png";
+// import auto from "../../public/auto.png";
+// import totebags from "../../public/totebags.png";
+// import dogs from "../../public/dogs.png";
 // import imc from "../../public/imc.png";
+
+import "preline/preline";
 
 const OurProjects = () => {
   return (
