@@ -26,7 +26,7 @@ const OurProjects = () => {
           </div>
           <div className="hs-carousel-slide">
             <div className="flex justify-center h-full m-6">
-              <img key={3} src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703636291/localhost_5174_home_Nest_Hub_Max_augr8p.png' alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] z-50"/>
+              <p className="text-white">HOALAASAS</p>
             </div>
           </div>
           
