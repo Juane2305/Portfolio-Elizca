@@ -1,21 +1,25 @@
 import './style/styles.css';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const WhyUs = () => {
 
- 
+    useEffect(()=>{
+        Aos.init({duration: 1000});
+      },[])
 
     return (
       <div id='why' className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-28">
-        <h1 className="text-gray-100 font-bold text-[30px] md:text-[40px] text-center lg:mt-0 cursor-default">
+        <h1 className="text-gray-100 font-bold text-[30px] md:text-[40px] text-center lg:mt-0 cursor-default" data-aos="fade-up">
         Why ELIZCA?
         </h1>
         <section className="flex justify-center mt-5">
-          <h2 className="text-white opacity-70 font-semibold sm:text-[20px] text-[15px] text-center w-3/4 cursor-default">
+          <h2 className="text-white opacity-70 font-semibold sm:text-[20px] text-[15px] text-center w-3/4 cursor-default" data-aos="fade-up">
           In an ever-evolving digital world, <span className='text-purple-500'>your company's</span> online presence is more crucial than ever. At <span className='text-purple-500'>ELIZCA</span>, we pride ourselves on being your trusted partner in creating <span className='text-purple-500'>exceptional web experiences</span>. Here are some compelling reasons to choose us as your web development team:
           </h2>
         </section>
-        <section className='flex justify-center mt-10'>
+        <section className='flex justify-center mt-10'  data-aos="fade-up">
         <main className="w-full sm:w-3/5 p-8 mx-auto">
             <section className="shadow row">
                 <div className="tabs">
@@ -131,7 +135,7 @@ const WhyUs = () => {
                                 </div>
                             </header>
                             <div className="tab-content">
-                                <div className="pl-8 pr-8 pb-5 text-gray-100">
+                                <div className="pl-8 pr-8 pb-5 text-gray-100" >
                                     <p className='px-4 cursor-default'>
                                         Our relationship doesn't end with the site launch. We offer strong ongoing support to ensure that your online presence remains effective and relevant as trends and technologies evolve.
                                     </p>
@@ -143,7 +147,7 @@ const WhyUs = () => {
             </section>
         </main>
         </section>
-        <section className='flex justify-center mt-7'>
+        <section className='flex justify-center mt-7' data-aos="fade-up">
             <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default  pt-8'>At <span className='text-purple-700'>ELIZCA</span>, we don't just build <span className='text-purple-700'>websites</span>; we build lasting <span className='text-purple-700'>partnerships</span>. Trust us to take your online presence to the <span className='text-purple-700'>next level</span>.</h2>
         </section>
       </div>

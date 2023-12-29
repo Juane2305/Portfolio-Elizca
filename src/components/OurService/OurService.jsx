@@ -1,7 +1,13 @@
 import { DevicePhoneMobileIcon, PencilSquareIcon, Cog6ToothIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const OurService = () => {
+
+  useEffect(()=>{
+    Aos.init({duration: 1000});
+  },[])
   
   const features = [
     {
@@ -36,10 +42,10 @@ const OurService = () => {
 
   return (
     <div id="service" className="h-full w-full bg-[#0D0D0D] z-50">
-      <h1 className="text-white font-bold sm:text-[40px] text-[30px] text-center m-0 cursor-default">
+      <h1 className="text-white font-bold sm:text-[40px] text-[30px] text-center m-0 cursor-default" data-aos="fade-up">
        Our Service
       </h1>
-      <div className='bg-gradient-to-tr from-purple-950 to-purple-800'>
+      <div className='bg-gradient-to-tr from-purple-950 to-purple-800' data-aos="fade-up">
         <div className="mx-auto mt-10 max-w-3xl lg:w-full py-10 px-10 lg:px-0">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 md:max-w-none md:grid-cols-2 md:gap-y-16">
             {features.map((feature) => (
