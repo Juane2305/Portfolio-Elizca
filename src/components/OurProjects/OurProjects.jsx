@@ -37,7 +37,7 @@ const OurProjects = () => {
           <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703635365/mdzautomotores.vercel.app__Nest_Hub_Max_nslnoo.png' alt="" className="w-[80%] md:w-[50%] flex rounded-sm z-20" data-aos="fade-up"/>
         </div>
         <div className="flex flex-col justify-center items-center py-5 md:flex-row md:justify-start md:items-center md:my-10" >
-          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden z-20">Tote bags</h2>
+          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden z-20">Tote Bags</h2>
           <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703636291/localhost_5174_home_Nest_Hub_Max_augr8p.png' alt="" className="w-[80%] md:w-[50%] flex z-20 rounded-sm" data-aos="fade-up"/>
           <div className="hidden md:flex md:flex-col md:w-[50%] md:items-center">
             <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">Tote Bags</h2>
