@@ -16,17 +16,17 @@ const OurProjects = () => {
         <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
           <div className="hs-carousel-slide">
             <div className="flex justify-center h-full m-6">
-              <img key={1} src={auto} alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] "/>
+              <img key={1} src={auto? auto : ""} alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] "/>
             </div>
           </div>
           <div className="hs-carousel-slide">
             <div className="flex justify-center h-full m-6">
-              <img key={2} src={totebags} alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] "/>
+              <img key={2} src={totebags? totebags : ""} alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] "/>
             </div>
           </div>
           <div className="hs-carousel-slide">
             <div className="flex justify-center h-full m-6">
-              <img key={3} src={dogs} alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] "/>
+              <img key={3} src={dogs? dogs : ""} alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] "/>
             </div>
           </div>
           
