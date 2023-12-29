@@ -16,17 +16,17 @@ const OurProjects = () => {
         <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
           <div className="hs-carousel-slide">
             <div className="flex justify-center h-full m-6">
-              <img key={1} src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703638345/localhost_3000_home_Nest_Hub_Max_ykyfiz.png' alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] "/>
+              <img key={1} src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703638345/localhost_3000_home_Nest_Hub_Max_ykyfiz.png' alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] z-50"/>
             </div>
           </div>
           <div className="hs-carousel-slide">
             <div className="flex justify-center h-full m-6">
-              <img key={2} src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703635365/mdzautomotores.vercel.app__Nest_Hub_Max_nslnoo.png' alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] "/>
+              <img key={2} src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703635365/mdzautomotores.vercel.app__Nest_Hub_Max_nslnoo.png' alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] z-50"/>
             </div>
           </div>
           <div className="hs-carousel-slide">
             <div className="flex justify-center h-full m-6">
-              <img key={3} src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703636291/localhost_5174_home_Nest_Hub_Max_augr8p.png' alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] "/>
+              <img key={3} src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703636291/localhost_5174_home_Nest_Hub_Max_augr8p.png' alt="" className="w-[300px] sm:w-[650px] lg:w-[50rem] z-50"/>
             </div>
           </div>
           
@@ -40,7 +40,7 @@ const OurProjects = () => {
         </span>
         <span className="sr-only">Previous</span>
       </button>
-      <button type="button" className="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 right-0 lg:right-[10rem] inline-flex justify-center items-center w-[46px] h-full text-gray-200 cursor-default">
+      <button type="button" className="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 right-0 lg:right-[10rem] inline-flex justify-center items-center w-[46px] h-full text-gray-200 cursor-default">
         <span className="sr-only">Next</span>
         <span className="text-2xl cursor-pointer p-2 rounded-full flex justify-center items-center hover:bg-gray-200/[.1]" aria-hidden="true">
           <svg className="w-4 h-4 lg:w-10 lg:h-10" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
