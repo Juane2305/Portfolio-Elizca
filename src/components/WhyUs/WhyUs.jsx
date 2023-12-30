@@ -2,8 +2,13 @@ import './style/styles.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 const WhyUs = () => {
+
+    const { t, i18n } = useTranslation()
+
 
     useEffect(()=>{
         Aos.init({duration: 1000});
@@ -12,11 +17,11 @@ const WhyUs = () => {
     return (
       <div id='why' className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-28">
         <h1 className="text-gray-100 font-bold text-[30px] md:text-[40px] text-center lg:mt-0 cursor-default" data-aos="fade-up">
-        Why ELIZCA?
+        {t("why")}
         </h1>
         <section className="flex justify-center mt-5">
           <h2 className="text-white opacity-70 font-semibold sm:text-[20px] text-[15px] text-center w-3/4 cursor-default" data-aos="fade-up">
-          In an ever-evolving digital world, <span className='text-purple-500'>your company's</span> online presence is more crucial than ever. At <span className='text-purple-500'>ELIZCA</span>, we pride ourselves on being your trusted partner in creating <span className='text-purple-500'>exceptional web experiences</span>. Here are some compelling reasons to choose us as your web development team:
+            {i18n.language === "en" ? <p>In an ever-evolving digital world, your company's <span className='text-purple-500'>online presence</span> is more <span className='text-purple-500'>crucial than ever</span>. At <span className='text-purple-500'>ELIZCA</span>, we pride ourselves on being <span className='text-purple-500'>your trusted partner</span> in creating <span className='text-purple-500'>exceptional web experiences</span>. Here are some compelling reasons to choose us as your web development team:</p> : <p>En un mundo digital en constante evolución, la <span className='text-purple-500'>presencia online</span> de su empresa es <span className='text-purple-500'>más crucial que nunca</span>. En <span className='text-purple-500'>ELIZCA</span>, nos enorgullecemos de ser su <span className='text-purple-500'>socio de confianza</span> en la creación de <span className='text-purple-500'>experiencias web excepcionales</span>. Estas son algunas razones de peso para elegirnos como su equipo de desarrollo web:</p>}
           </h2>
         </section>
         <section className='flex justify-center mt-10'  data-aos="fade-up">
@@ -28,7 +33,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck1"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck1">
                                 <span className="text-gray-100 font-thin text-xl">
-                                Specialized Expertise
+                                {t("expertise")}
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -41,7 +46,7 @@ const WhyUs = () => {
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
                                     <p className='px-4 cursor-default'>
-                                    With years of experience in web development, we have honed our skills to create sites that are not only visually appealing, but also highly functional. From simple informational pages to complex web applications, we have the expertise to tackle any challenge.
+                                        {t("expertiseInfo")}
                                     </p>
                                 </div>
                             </div>
@@ -52,7 +57,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck2"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck2">
                                 <span className="text-gray-100 font-thin text-xl">
-                                    Personalized Approach
+                                    {t("personalized")}
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -65,7 +70,7 @@ const WhyUs = () => {
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
                                     <p className='px-4 cursor-default'>
-                                    We understand that each company is unique. That's why we take a customized approach to every project. We work closely with you to understand your objectives, your audience and your specific requirements. This allows us to deliver solutions that are perfectly tailored to your individual needs.
+                                    {t("personalizedInfo")}
                                     </p>
                                 </div>
                             </div>
@@ -76,7 +81,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck3"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck3">
                                 <span className="text-gray-100 font-thin text-xl">
-                                   Innovative Design
+                                   {t("innovative")}
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                     
@@ -89,7 +94,7 @@ const WhyUs = () => {
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
                                     <p className='px-4 cursor-default'>
-                                        Design matters. We create visual experiences that stand out and captivate your visitors from the very first moment. Our design team combines creativity and functionality to deliver websites that not only look good, but also improve usability and user interaction.
+                                    {t("innovativeInfo")}
                                     </p>
                                 </div>
                             </div>
@@ -100,7 +105,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck1"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck1">
                                 <span className="text-gray-100 font-thin text-xl">
-                                    Commitment to Quality
+                                    {t("quality")}
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -113,7 +118,7 @@ const WhyUs = () => {
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100">
                                     <p className='px-4 cursor-default'>
-                                        Quality is our top priority. From planning to implementation and beyond, we strive to exceed expectations. We perform extensive testing to ensure your site is robust, secure and ready to excel in the competitive digital world.
+                                        {t("qualityInfo")}
                                     </p>
                                 </div>
                             </div>
@@ -124,7 +129,7 @@ const WhyUs = () => {
                             <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck1"/>
                             <header className="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label" htmlFor="chck1">
                                 <span className="text-gray-100 font-thin text-xl">
-                                   Ongoing Support
+                                   {t("support")}
                                 </span>
                                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center test">
                                    
@@ -137,7 +142,7 @@ const WhyUs = () => {
                             <div className="tab-content">
                                 <div className="pl-8 pr-8 pb-5 text-gray-100" >
                                     <p className='px-4 cursor-default'>
-                                        Our relationship doesn't end with the site launch. We offer strong ongoing support to ensure that your online presence remains effective and relevant as trends and technologies evolve.
+                                        {t("supportInfo")}
                                     </p>
                                 </div>
                             </div>
@@ -148,7 +153,9 @@ const WhyUs = () => {
         </main>
         </section>
         <section className='flex justify-center mt-7' data-aos="fade-up">
-            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default  pt-8'>At <span className='text-purple-700'>ELIZCA</span>, we don't just build <span className='text-purple-700'>websites</span>; we build lasting <span className='text-purple-700'>partnerships</span>. Trust us to take your online presence to the <span className='text-purple-700'>next level</span>.</h2>
+            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default  pt-8'>
+            {i18n.language === "en" ? <p>At <span className='text-purple-500'>ELIZCA</span>, we don't just build websites; we build <span className='text-purple-500'>lasting partnerships</span>. Trust us to take your online presence to the next level.</p> : <p>En <span className='text-purple-500'>ELIZCA</span>, no sólo construimos sitios web; construimos <span className='text-purple-500'>asociaciones duraderas</span>. Confíe en nosotros para llevar su presencia online al siguiente nivel.</p>}
+            </h2>
         </section>
       </div>
     );

@@ -1,6 +1,8 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 import "preline/preline";
 
@@ -11,18 +13,21 @@ const OurProjects = () => {
   },[])
 
 
+  const { t } = useTranslation()
+
+
   return (
       <div>
         <h1 id="projects" className="text-white font-bold text-[30px] sm:text-[40px] text-center cursor-default py-10" data-aos="fade-up">
-          Our Projects
+          {t("ourProjects")}
         </h1>
         <div className="flex flex-col justify-center items-center py-5  md:flex-row md:justify-start md:items-center md:my-10 z-20">
-          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden" data-aos="fade-up">Happy Paws</h2>
+          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden" data-aos="fade-up">{t("firstProject")}</h2>
           <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703638345/localhost_3000_home_Nest_Hub_Max_ykyfiz.png' alt="" className="w-[80%] md:w-[50%] flex rounded-sm z-20" data-aos="fade-up"/>
           <div className="hidden md:flex md:flex-col md:w-[50%] md:items-center">
-            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">Happy Paws</h2>
+            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">{t("firstProject")}</h2>
             <p className="text-gray-100 w-3/4 text-center text-sm lg:text-lg z-20" data-aos="fade-up">
-            Happy Paws is an adoption platform for homeless dogs, where rescuers share detailed information and photos of available animals. The site facilitates contact between potential adopters and rescuers, seeking loving homes and raising awareness about responsible adoption to address the problem of abandoned animals.
+            {t("firstInfo")}
             </p>
           </div>
         </div>
@@ -31,7 +36,7 @@ const OurProjects = () => {
           <div className="hidden md:flex md:flex-col md:w-[50%] md:items-center">
             <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">Mendoza Automotores</h2>
             <p className="text-gray-100 w-3/4 text-center text-sm lg:text-lg z-20" data-aos="fade-up">
-            Mendoza Automotores is a platform for buying and selling cars, offering both used and new options. Users can explore models, features and prices, facilitating contact between buyers and sellers. The site provides a centralized experience in the automotive market.
+              {t("secondInfo")}
             </p>
           </div>
           <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703635365/mdzautomotores.vercel.app__Nest_Hub_Max_nslnoo.png' alt="" className="w-[80%] md:w-[50%] flex rounded-sm z-20" data-aos="fade-up"/>
@@ -42,7 +47,7 @@ const OurProjects = () => {
           <div className="hidden md:flex md:flex-col md:w-[50%] md:items-center">
             <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">Tote Bags</h2>
             <p className="text-gray-100 w-3/4 text-center text-sm lg:text-lg z-20" data-aos="fade-up">
-            Tote Bags is an ecommerce that specializes in selling stylish eco-friendly bags. By purchasing these bags, you not only get an attractive product, but you also contribute to the preservation of the environment, promoting less use of disposable bags.
+            {t("thirdInfo")}
             </p>
           </div>
         </div>

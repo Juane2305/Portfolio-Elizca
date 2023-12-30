@@ -3,8 +3,12 @@ import { useState, useRef } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ContactUs = () => {
+
+  const { t } = useTranslation()
+
 
   useEffect(()=>{
     Aos.init({duration: 1000});
@@ -30,7 +34,6 @@ const ContactUs = () => {
 
       const serviceId = 'service_qkgeyzb'
       const templateId = 'template_2wn43ia'
-      // 3er parametro
       const publicKey = 'i9JqoBg9vA0X6dC52'
 
       emailjs.sendForm(serviceId, templateId, refForm.current, publicKey)
@@ -58,7 +61,7 @@ const ContactUs = () => {
               
             </div>
             <h2 className="text-2xl font-semibold text-center mb-5 cursor-default">
-            Contact us
+              {t("contactUs")}
             </h2>
             <form ref={refForm} onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -66,7 +69,7 @@ const ContactUs = () => {
                   htmlFor="username"
                   className="block text-gray-700 text-sm font-semibold mb-2"
                 >
-                  Your Name *
+                  {t("name")}
                 </label>
                 <input
                   type="text"
@@ -84,7 +87,7 @@ const ContactUs = () => {
                   htmlFor="email"
                   className="block text-gray-700 text-sm font-semibold mb-2"
                 >
-                  Email Adress *
+                  {t("email")}
                 </label>
                 <input
                   type="email"
@@ -94,7 +97,7 @@ const ContactUs = () => {
                   onChange={handleChange}
                   className="form-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-purple-500"
                   required
-                  placeholder="hello@email.com"
+                  placeholder={t("placeholderMail")}
                 />
               </div>
               <div className="mb-6">
@@ -102,7 +105,7 @@ const ContactUs = () => {
                   htmlFor="message"
                   className="block text-gray-700 text-sm font-semibold mb-2"
                 >
-                  Message *
+                  {t("message")}
                 </label>
                 <textarea
                   name='message'
@@ -117,7 +120,7 @@ const ContactUs = () => {
                 type="submit"
                 className="w-full bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
               >
-               Send message
+                {t("send")}
               </button>
             </form>
           </div>

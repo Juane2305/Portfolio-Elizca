@@ -1,6 +1,12 @@
 import logo from '../../public/logo.png'
+import { useTranslation } from 'react-i18next';
+
 
 const Footer = () => {
+
+    const { t } = useTranslation()
+
+
   return (
     <footer className="bg-[#000] pt-10">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -10,21 +16,21 @@ const Footer = () => {
                 </a>
                 <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                     <li>
-                        <a href="#service" className="hover:underline me-4 md:me-6">Our service</a>
+                        <a href="#service" className="hover:underline me-4 md:me-6">{t("ourService")}</a>
                     </li>
                     <li>
-                        <a href="#why" className="hover:underline me-4 md:me-6">Why Elizca?</a>
+                        <a href="#why" className="hover:underline me-4 md:me-6">{t("why")}</a>
                     </li>
                     <li>
-                        <a href="#projects" className="hover:underline me-4 md:me-6">Our Projects</a>
+                        <a href="#projects" className="hover:underline me-4 md:me-6">{t("ourProjects")}</a>
                     </li>
                     <li>
-                        <a href="#contact" className="hover:underline">Contact us</a>
+                        <a href="#contact" className="hover:underline">{t("contactUs")}</a>
                     </li>
                 </ul>
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" className="hover:underline">Elizca</a>. All Rights Reserved.</span>
+            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" className="hover:underline">Elizca</a>. {t("rights")}</span>
         </div>
     </footer>
   )

@@ -16,9 +16,12 @@
     "aos": "^2.3.4",
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
+    "i18next": "^23.7.13",
+    "i18next-browser-languagedetector": "^7.2.0",
     "preline": "^2.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.0",
     "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {

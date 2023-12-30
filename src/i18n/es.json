@@ -1,0 +1,59 @@
+{
+    "home": "Inicio",
+    "service": "Nuestro servicio",
+    "whyElica": "Por qué elegirnos?",
+    "ourProjects": "Nuestros proyectos",
+    "contact": "Contáctanos",
+    
+    "we": "Somos",
+    
+    "title": "HOLA, SOMOS ELIZCA",
+    "ourService": "Nuestro Servicio",
+    "customWeb" : "Diseño web personalizado",
+    "customInfo" : "Convertimos todas tus ideas en una página web.",
+    "responsive": "Diseño adaptable",
+    "responsiveInfo": "Nuestras páginas web funcionan perfectamente en todos los tamaños de pantalla.",
+    "mantainance": "Mantenimiento continuo",
+    "mantainanceInfo": "Ofrecemos 1 mes de mantenimiento gratis.",
+    "e-commerce": "Página e-commerce",
+    "e-commerceInfo": "Potenciamos su tienda en línea con funciones intuitivas y seguras.",
+
+    "why": "¿Por qué ELIZCA?",
+    "infoWhy": "En un mundo digital en constante evolución, la presencia online de su empresa es más crucial que nunca. En ELICA, nos enorgullecemos de ser su socio de confianza en la creación de experiencias web excepcionales. Estas son algunas razones de peso para elegirnos como su equipo de desarrollo web:",
+
+    "expertise": "Conocimientos Especializados",
+    "expertiseInfo": "Con años de experiencia en desarrollo web, hemos perfeccionado nuestras habilidades para crear sitios que no sólo son visualmente atractivos, sino también altamente funcionales. Desde simples páginas informativas hasta complejas aplicaciones web, tenemos la experiencia necesaria para afrontar cualquier reto.",
+
+    "personalized": "Enfoque personalizado",
+    "personalizedInfo": "Entendemos que cada empresa es única. Por eso adoptamos un enfoque personalizado para cada proyecto. Trabajamos estrechamente con usted para comprender sus objetivos, su público y sus requisitos específicos. Esto nos permite ofrecer soluciones perfectamente adaptadas a sus necesidades individuales.",
+
+    "innovative": "Diseño innovador",
+    "innovativeInfo": "El diseño importa. Creamos experiencias visuales que destacan y cautivan a sus visitantes desde el primer momento. Nuestro equipo de diseño combina creatividad y funcionalidad para ofrecer sitios web que no solo tengan buen aspecto, sino que también mejoren la usabilidad y la interacción con el usuario.",
+
+    "quality": "Compromiso con la calidad",
+    "qualityInfo": "La calidad es nuestra máxima prioridad. Desde la planificación hasta la implementación y más allá, nos esforzamos por superar las expectativas. Realizamos pruebas exhaustivas para garantizar que su sitio web sea sólido, seguro y esté listo para destacar en el competitivo mundo digital.",
+
+    "support": "Asistencia continua",
+    "supportInfo": "Nuestra relación no termina con el lanzamiento del sitio. Ofrecemos un sólido apoyo continuo para garantizar que su presencia en línea siga siendo eficaz y relevante a medida que evolucionan las tendencias y las tecnologías.",
+
+    "trustUs": "En ELICA, no sólo construimos sitios web; construimos asociaciones duraderas. Confíe en nosotros para llevar su presencia online al siguiente nivel.",
+
+
+    "firstProject" : "Patitas Felices",
+    "firstInfo": "Patitas Felices es una plataforma de adopción de perros sin hogar, donde los rescatadores comparten información detallada y fotos de los animales disponibles. El sitio facilita el contacto entre posibles adoptantes y rescatadores, buscando hogares cariñosos y concienciando sobre la adopción responsable para terminar con el problema de los animales abandonados.",
+    "secondInfo": "Mendoza Automotores es una plataforma de compra y venta de coches, que ofrece opciones tanto de segunda mano como nuevos. Los usuarios pueden explorar modelos, características y precios, facilitando el contacto entre compradores y vendedores. El sitio ofrece una experiencia centralizada en el mercado automotriz.",
+    "thirdInfo": "Tote Bags es un ecommerce especializado en la venta de elegantes bolsas ecológicas. Al comprar estas bolsas, no solo obtienes un producto atractivo, sino que también contribuyes a la preservación del medio ambiente, promoviendo un menor uso de bolsas desechables.",
+
+    "yourIdea": "¡Cuéntanos tu idea!",
+    "contactUs": "Contáctanos",
+
+    "name": "Tu nombre *",
+    "email": "Correo electrónico *",
+    "message": "Mensaje *",
+
+    "placeholderMail": "hola@correo.com",
+
+    "send": "Enviar mensaje",
+
+    "rights": "Todos los derechos reservados."
+}

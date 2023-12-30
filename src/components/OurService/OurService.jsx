@@ -2,8 +2,13 @@ import { DevicePhoneMobileIcon, PencilSquareIcon, Cog6ToothIcon, ShoppingCartIco
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 const OurService = () => {
+
+  const { t } = useTranslation()
+
 
   useEffect(()=>{
     Aos.init({duration: 1000});
@@ -12,30 +17,30 @@ const OurService = () => {
   const features = [
     {
       id: 1,
-      name: <span>Custom web design</span>,
+      name: <span>{t("customWeb")}</span>,
       description:
-        <span>We translate your idea into a modern website.</span>,
+        <span>{t("customInfo")}</span>,
       icon: PencilSquareIcon,
     },
     {
       id: 2,
-      name: <span>Responsive design</span>,
+      name: <span>{t("responsive")}</span>,
       description:
-        <span>Our websites work perfectly on all screen sizes.</span>,
+        <span>{t("responsiveInfo")}</span>,
       icon: DevicePhoneMobileIcon,
     },
     {
       id: 3,
-      name: <span>Continuous mantainance</span>,
+      name: <span>{t("mantainance")}</span>,
       description:
-        <span>We offer 1 month of free mantainance.</span>,
+        <span>{t("mantainanceInfo")}</span>,
       icon: Cog6ToothIcon,
     },
     {
       id: 4,
-      name: <span>E-commerce website</span>,
+      name: <span>{t("e-commerce")}</span>,
       description:
-        <span>We empower your online store with intuitive and secure features.</span>,
+        <span>{t("e-commerceInfo")}</span>,
       icon: ShoppingCartIcon,
     },
   ]
@@ -43,7 +48,7 @@ const OurService = () => {
   return (
     <div id="service" className="h-full w-full bg-[#0D0D0D] z-50">
       <h1 className="text-white font-bold sm:text-[40px] text-[30px] text-center m-0 cursor-default" data-aos="fade-up">
-       Our Service
+       {t("ourService")}
       </h1>
       <div className='bg-gradient-to-tr from-purple-950 to-purple-800' data-aos="fade-up">
         <div className="mx-auto mt-10 max-w-3xl lg:w-full py-10 px-10 lg:px-0">
