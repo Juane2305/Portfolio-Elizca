@@ -15,7 +15,10 @@ const WhyUs = () => {
       },[])
 
     return (
-      <div id='why' className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-28">
+      <div id='why' className="h-full w-full bg-[#0D0D0D] pt-10 lg:pt-28 relative isolate">
+        <div className="absolute inset-x-0 bottom-28 md:bottom-10 -z-10 transform-gpu blur-[15rem] overflow-hidden sm:-top-54" aria-hidden="true">
+            <div className="relative left-[15rem] h-[35rem] md:h-[35rem] lg:h-[35rem] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-purple-950 to-purple-950 md:left-[calc(100%-24rem)] lg:left-[calc(100%-50rem)] sm:w-[72.1875rem]"></div>
+        </div>
         <h1 className="text-gray-100 font-bold text-[30px] md:text-[40px] text-center lg:mt-0 cursor-default" data-aos="fade-up">
         {t("why")}
         </h1>

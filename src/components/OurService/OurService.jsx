@@ -50,11 +50,11 @@ const OurService = () => {
       <h1 className="text-white font-bold sm:text-[40px] text-[30px] text-center m-0 cursor-default" data-aos="fade-up">
        {t("ourService")}
       </h1>
-      <div className='bg-gradient-to-tr from-purple-950 to-purple-800' data-aos="fade-up">
-        <div className="mx-auto mt-10 max-w-3xl lg:w-full py-10 px-10 lg:px-0">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 md:max-w-none md:grid-cols-2 md:gap-y-16">
+      <div className='bg-gradient-to-tr from-purple-950 to-purple-800 ' data-aos="fade-up">
+        <div className="mx-auto mt-10 max-w-3xl lg:w-full py-10 px-10 lg:px-0 ">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 md:max-w-none md:grid-cols-2 md:gap-y-16 ">
             {features.map((feature) => (
-              <div key={feature.id} className="relative pl-16">
+              <div key={feature.id} className="relative pl-16 ">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-xl bg-white shadow-md">
                     <feature.icon className="h-6 w-6 text-purple-700" aria-hidden="true"/>
