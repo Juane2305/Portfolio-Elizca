@@ -44,7 +44,8 @@
     "secondInfo": "Mendoza Automotores is a platform for buying and selling cars, offering both used and new options. Users can explore models, features and prices, facilitating contact between buyers and sellers. The site provides a centralized experience in the automotive market.",
     "thirdInfo": "Tote Bags is an ecommerce that specializes in selling stylish eco-friendly bags. By purchasing these bags, you not only get an attractive product, but you also contribute to the preservation of the environment, promoting less use of disposable bags.",
 
-
+    "messageError": "Your message could not be sent",
+    "messageSuccess": "Your message has been successfully sent!",
     "yourIdea": "Tell us your idea!",
     "contactUs": "Contact us",
 

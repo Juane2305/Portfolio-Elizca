@@ -44,6 +44,8 @@
     "secondInfo": "Mendoza Automotores es una plataforma de compra y venta de coches, que ofrece opciones tanto de segunda mano como nuevos. Los usuarios pueden explorar modelos, características y precios, facilitando el contacto entre compradores y vendedores. El sitio ofrece una experiencia centralizada en el mercado automotriz.",
     "thirdInfo": "Tote Bags es un ecommerce especializado en la venta de elegantes bolsas ecológicas. Al comprar estas bolsas, no solo obtienes un producto atractivo, sino que también contribuyes a la preservación del medio ambiente, promoviendo un menor uso de bolsas desechables.",
 
+    "messageError": "No se ha podido enviar su consulta",
+    "messageSuccess": "¡Su consulta ha sido enviada con éxito!",
     "yourIdea": "¡Cuéntanos tu idea!",
     "contactUs": "Contáctanos",
 

@@ -4,17 +4,15 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import Swal from 'sweetalert2';
 
 const ContactUs = () => {
 
-  const { t } = useTranslation()
-
+  const { t, i18n } = useTranslation()
 
   useEffect(()=>{
     Aos.init({duration: 1000});
   },[])
-
-
 
   const [data, setData] = useState({
     username: '',
@@ -29,6 +27,11 @@ const ContactUs = () => {
     setData({...data, [event.target.name]: event.target.value })
   }
 
+  const messageSuccess = i18n.language == 'en' ?  'Your message has been successfully sent!' : '¡Su consulta ha sido enviada con éxito!'
+  const messageError = i18n.language == 'en' ?  'Your message could not be sent' : 'No se ha podido enviar su consulta'
+
+  console.log(messageSuccess);
+
   const handleSubmit = (e) => {
       e.preventDefault();
 
@@ -38,9 +41,16 @@ const ContactUs = () => {
 
       emailjs.sendForm(serviceId, templateId, refForm.current, publicKey)
         .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
+          Swal.fire({
+            title: messageSuccess,
+            icon: 'success',
+          })
+          console.log(result.text);
+          }, () => {
+            Swal.fire({
+              title: messageError,
+              icon: 'error',
+            })
           });
       setData({
         username: '',
