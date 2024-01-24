@@ -1,5 +1,3 @@
-import whatsapp from './img/whatsapp.png'
-
 const phoneNumber = '+542612404253'; // Acá tienen que agregar su número de teléfono
 
 
@@ -13,7 +11,7 @@ const WhatsappButton = () => {
       >
         <img
             className='img z-50 w-12 h-12'
-            src={whatsapp}
+            src='https://res.cloudinary.com/dfschbyq2/image/upload/v1706035880/whatsapp_j8ynng.png'
             alt="WhatsApp"
         />
       </a>
