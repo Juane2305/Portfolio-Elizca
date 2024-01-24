@@ -2,6 +2,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import backgroundR from '../../public/waveline2.svg'
 
 
 import "preline/preline";
@@ -13,7 +14,7 @@ const OurProjects = () => {
   },[])
 
 
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
 
   return (
@@ -21,31 +22,34 @@ const OurProjects = () => {
         <h1 id="projects" className="text-white font-bold text-[30px] sm:text-[40px] text-center cursor-default py-10" data-aos="fade-up">
           {t("ourProjects")}
         </h1>
-        <div className="flex flex-col justify-center items-center py-5  md:flex-row md:justify-start md:items-center md:my-10 z-20">
-          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden" data-aos="fade-up">{t("firstProject")}</h2>
+        <div className="flex flex-col justify-center items-center py-5  md:flex-row md:justify-start md:items-center md:my-10 z-20 relative">
+          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden" data-aos="fade-up">{i18n.language === "en" ? <p>Happy <span className='text-purple-700'>Paws</span></p> : <p>Patitas <span className='text-purple-700'>Felices</span></p>}</h2>
           <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703638345/localhost_3000_home_Nest_Hub_Max_ykyfiz.png' alt="" className="w-[80%] md:w-[50%] flex rounded-sm z-20" data-aos="fade-up"/>
           <div className="hidden md:flex md:flex-col md:w-[50%] md:items-center">
-            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">{t("firstProject")}</h2>
+            <img src={backgroundR} alt="" className='absolute right-0 top-0'/>
+            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">{i18n.language === "en" ? <p>Happy <span className='text-purple-700'>Paws</span></p> : <p>Patitas <span className='text-purple-700'>Felices</span></p>}</h2>
             <p className="text-gray-100 w-3/4 text-center text-sm lg:text-lg z-20" data-aos="fade-up">
             {t("firstInfo")}
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center py-5 md:flex-row md:justify-end md:items-center md:my-10">
-          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden" data-aos="fade-up">Mendoza Automotores</h2>
+        <div className="flex flex-col justify-center items-center py-5 md:flex-row md:justify-end md:items-center md:my-10 relative">
+          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden" data-aos="fade-up">Mendoza <span className='text-purple-700'>Automotores</span></h2>
           <div className="hidden md:flex md:flex-col md:w-[50%] md:items-center">
-            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">Mendoza Automotores</h2>
+          <img src={backgroundR} alt="" className='absolute left-0 top-0'/>
+            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">Mendoza <span className='text-purple-700'>Automotores</span></h2>
             <p className="text-gray-100 w-3/4 text-center text-sm lg:text-lg z-20" data-aos="fade-up">
               {t("secondInfo")}
             </p>
           </div>
           <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703635365/mdzautomotores.vercel.app__Nest_Hub_Max_nslnoo.png' alt="" className="w-[80%] md:w-[50%] flex rounded-sm z-20" data-aos="fade-up"/>
         </div>
-        <div className="flex flex-col justify-center items-center py-5 md:flex-row md:justify-start md:items-center md:my-10" >
-          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden z-20">Tote Bags</h2>
-          <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703636291/localhost_5174_home_Nest_Hub_Max_augr8p.png' alt="" className="w-[80%] md:w-[50%] flex z-20 rounded-sm" data-aos="fade-up"/>
+        <div className="flex flex-col justify-center items-center py-5 md:flex-row md:justify-start md:items-center md:my-10 relative" >
+          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden z-20">Shoes <span className='text-purple-700'>FR</span></h2>
+          <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1705419825/localhost_5173_home_Nest_Hub_Max_o2gmxk.png' alt="" className="w-[80%] md:w-[50%] flex z-20 rounded-sm" data-aos="fade-up"/>
           <div className="hidden md:flex md:flex-col md:w-[50%] md:items-center">
-            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">Tote Bags</h2>
+            <img src={backgroundR} alt="" className='absolute right-0 top-0'/>
+            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">Shoes <span className='text-purple-700'>FR</span></h2>
             <p className="text-gray-100 w-3/4 text-center text-sm lg:text-lg z-20" data-aos="fade-up">
             {t("thirdInfo")}
             </p>

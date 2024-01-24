@@ -42,8 +42,10 @@
     "firstProject" : "Patitas Felices",
     "firstInfo": "Patitas Felices es una plataforma de adopción de perros sin hogar, donde los rescatadores comparten información detallada y fotos de los animales disponibles. El sitio facilita el contacto entre posibles adoptantes y rescatadores, buscando hogares cariñosos y concienciando sobre la adopción responsable para terminar con el problema de los animales abandonados.",
     "secondInfo": "Mendoza Automotores es una plataforma de compra y venta de coches, que ofrece opciones tanto de segunda mano como nuevos. Los usuarios pueden explorar modelos, características y precios, facilitando el contacto entre compradores y vendedores. El sitio ofrece una experiencia centralizada en el mercado automotriz.",
-    "thirdInfo": "Tote Bags es un ecommerce especializado en la venta de elegantes bolsas ecológicas. Al comprar estas bolsas, no solo obtienes un producto atractivo, sino que también contribuyes a la preservación del medio ambiente, promoviendo un menor uso de bolsas desechables.",
+    "thirdInfo": "Shoes FR es tu tienda en línea especializada en zapatillas de primera calidad. Explora nuestra amplia variedad de calzado, donde encontrarás imágenes detalladas, tallas disponibles y la opción de resolver cualquier pregunta. Descubre la zapatilla ideal para cada ocasión en Shoes FR.",
 
+    "messageError": "No se ha podido enviar su consulta",
+    "messageSuccess": "¡Su consulta ha sido enviada con éxito!",
     "yourIdea": "¡Cuéntanos tu idea!",
     "contactUs": "Contáctanos",
 
