@@ -55,7 +55,7 @@ const OurProjects = () => {
               {projects.map((project) => (
               <CarouselItem key={project.id} className="">
                   <Card className="w-full border-none outline-none flex justify-center items-center">
-                      <CardContent className="flex flex-col lg:flex lg:flex-row items-center justify-start p-6 bg-[#0e0719] lg:h-full sm:h-[37rem] h-[30rem] gap-5 lg:gap-0 shadow-sombra-imagenes">
+                      <CardContent className="flex flex-col lg:flex lg:flex-row items-center justify-start p-6 bg-gradient-to-tr from-[#0e0719] to-[#261244]  lg:h-full sm:h-[37rem] h-[30rem] gap-5 lg:gap-0 shadow-sombra-imagenes">
                         <img src={project.image} alt="" className="shadow-sombra-imagenes w-[35rem] 2xl:w-[40rem]"/>
                           <section className="flex flex-col justify-center items-center gap-5">
                               <div className="flex flex-col justify-start items-center gap-4">
