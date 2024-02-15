@@ -74,7 +74,7 @@ const WhyUs = () => {
         </main>
         </section>
         <section className='flex justify-center mt-7' data-aos="fade-up">
-            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 opacity-70 cursor-default  pt-8'>
+            <h2 className='text-gray-100 font-semibold text-[20px] text-center w-3/4 sm:w-1/2 cursor-default pt-8'>
             {i18n.language === "en" ? <p>At <span className='text-purple-500'>ELIZCA</span>, we don't just build websites; we build <span className='text-purple-500'>lasting partnerships</span>. Trust us to take your online presence to the next level.</p> : <p>En <span className='text-purple-500'>ELIZCA</span>, no sólo construimos sitios web; construimos <span className='text-purple-500'>asociaciones duraderas</span>. Confíe en nosotros para llevar su presencia online al siguiente nivel.</p>}
             </h2>
         </section>

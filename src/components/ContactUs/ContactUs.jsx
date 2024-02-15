@@ -66,7 +66,7 @@ const ContactUs = () => {
         <img src={background} alt="" className='absolute right-0'/>
         <section className='flex justify-center items-center lg:pt-10 mx-5 sm:mx-0'>
           <div className='z-10 hidden lg:w-[35rem] lg:flex lg:justify-center lg:items-center' data-aos="fade-up">
-            <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1703865403/contact2_y1f45t.png" alt="" className='z-10 w-[35rem]'/>
+            <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1708040403/it-support-monochromatic_ify7og.svg" alt="" className='z-10 w-[30rem]'/>
           </div>
           <div className="bg-white px-8 pb-8 rounded-lg shadow-lg max-w-sm lg:w-1/3 z-10" data-aos="fade-up">
             <div className="flex justify-center mb-6">
@@ -130,7 +130,7 @@ const ContactUs = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+                className="w-full bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 duration-300"
               >
                 {t("send")}
               </button>

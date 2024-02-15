@@ -1,8 +1,17 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import backgroundR from '../../public/waveline2.svg'
+import { GoLinkExternal } from "react-icons/go";
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 
 import "preline/preline";
@@ -16,44 +25,53 @@ const OurProjects = () => {
 
   const { t, i18n } = useTranslation()
 
+  const projects = [
+    {id: 1, name: <h2 className='font-bold text-xl text-white xl:text-4xl'>MJ <span className='text-purple-500'>Agency</span></h2>, description: i18n.language === "en" ? "This project was developed for the company M&J Agency, providing detailed information about the company, the services they offer, the team that integrates it and a contact section to resolve any questions you may have." : "Este proyecto fue desarrollado para la empresa M&J Agency, proporcionando información detallada sobre la empresa, los servicios que ofrecen, el equipo que la integra y una sección de contacto para resolver cualquier consulta que puedas tener.", image: "https://res.cloudinary.com/dreso9ye9/image/upload/v1707144180/Portfolio%20FR/www.mjagency.info__Nest_Hub_Max_pw55pp.png", deploy: <a href="https://www.mjagency.info/" className='flex justify-center items-center gap-5 bg-purple-500 text-white px-20 py-2 cursor-pointer rounded-lg hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 duration-300 text-xl' target="_blank" rel="noreferrer"><GoLinkExternal/></a>},
+
+    {id: 2, name: <h2 className='font-bold text-xl text-white xl:text-4xl'>Shoes <span className='text-purple-500'>FR</span></h2>, description: i18n.language === "en" ? "On this website we offer a wide range of shoes, where you can explore their prices, sizes and descriptions. In addition, we have a management section that gives you the facility to add, edit or delete both shoes and users." : "En este sitio web te ofrecemos una amplia gama de zapatillas, donde podrás explorar sus precios, tallas y descripciones. Además, disponemos de una sección de gestión que te brinda la facilidad de añadir, editar o eliminar tanto zapatillas como usuarios.", image: "https://res.cloudinary.com/dreso9ye9/image/upload/v1705419825/localhost_5173_home_Nest_Hub_Max_o2gmxk.png"},
+
+    {id: 3, name: <h2 className='font-bold text-xl text-white xl:text-4xl'>Sonidos <span className='text-purple-500'>Reservados</span></h2>, description: i18n.language === "en" ? "Here you will find a wide variety of instruments for booking. You can log in to check the availability of dates. As an administrator user you can access the administration section to manage users and instruments." : "Aquí encontrarás una gran variedad de instrumentos para reservar. Puedes iniciar sesión para verificar la disponibilidad de fechas. Siendo usuario administrador puedes acceder a la sección de administración para gestionar usuarios e instrumentos.", image: "https://res.cloudinary.com/dreso9ye9/image/upload/v1707404260/localhost_8080__Nest_Hub_Max_u6hkyg.png"},
+
+    {id: 4, name: <h2 className='font-bold text-xl text-white xl:text-4xl'>Mdz <span className='text-purple-500'>Automotores</span></h2>, description: i18n.language === "en" ? "In this web page, you will be able to see the cars available, learn a little about the history of the company and find a map with the exact location of our facilities. In addition, we have a contact section where you can ask your questions." : "En esta página web, podrás ver los autos disponibles, conocer un poco sobre la historia de la empresa y encontrar un mapa con la ubicación exacta de nuestras instalaciones. Además, contamos con una sección de contacto donde podrás consultar tus dudas.", image: "https://res.cloudinary.com/dreso9ye9/image/upload/v1707143488/Portfolio%20FR/mdzautomotores.vercel.app__Nest_Hub_Max_1_hxfoff.png", deploy: <a href="https://mdzautomotores.vercel.app/" target="_blank"  className='flex justify-center items-center gap-5 bg-purple-500 text-white px-20 py-2 cursor-pointer rounded-lg hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 duration-300 text-xl' rel="noreferrer"><GoLinkExternal/></a>},
+
+    {id: 5, name: i18n.language === "en" ? <h2 className='font-bold text-xl text-white xl:text-4xl'>Happy <span className='text-purple-500'>Paws</span></h2> : <h2 className='font-bold text-xl text-white xl:text-4xl'>Patitas <span className='text-purple-500'>Felices</span></h2>, description: i18n.language === "en" ? "Happy Paws is an adoption platform for homeless dogs, where rescuers share detailed information and photos of available animals. The site facilitates contact between potential adopters and rescuers." : "Patitas Felices es una plataforma de adopción de perros sin hogar, donde los rescatadores comparten información detallada y fotos de los animales disponibles. El sitio facilita el contacto entre posibles adoptantes y rescatadores.", image: "https://res.cloudinary.com/dreso9ye9/image/upload/v1703638345/localhost_3000_home_Nest_Hub_Max_ykyfiz.png"},
+]
+
 
   return (
       <div>
-        <h1 id="projects" className="text-white font-bold text-[30px] sm:text-[40px] text-center cursor-default py-10" data-aos="fade-up">
+        <h1 id="projects" className="text-white font-bold text-[30px] sm:text-[40px] text-center cursor-default pt-10 z-20" data-aos="fade-up">
           {t("ourProjects")}
         </h1>
-        <div className="flex flex-col justify-center items-center py-5  md:flex-row md:justify-start md:items-center md:my-10 z-20 relative">
-          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden" data-aos="fade-up">{i18n.language === "en" ? <p>Happy <span className='text-purple-700'>Paws</span></p> : <p>Patitas <span className='text-purple-700'>Felices</span></p>}</h2>
-          <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703638345/localhost_3000_home_Nest_Hub_Max_ykyfiz.png' alt="" className="w-[80%] md:w-[50%] flex rounded-sm z-20" data-aos="fade-up"/>
-          <div className="hidden md:flex md:flex-col md:w-[50%] md:items-center">
-            <img src={backgroundR} alt="" className='absolute right-0 top-0'/>
-            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">{i18n.language === "en" ? <p>Happy <span className='text-purple-700'>Paws</span></p> : <p>Patitas <span className='text-purple-700'>Felices</span></p>}</h2>
-            <p className="text-gray-100 w-3/4 text-center text-sm lg:text-lg z-20" data-aos="fade-up">
-            {t("firstInfo")}
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center items-center py-5 md:flex-row md:justify-end md:items-center md:my-10 relative">
-          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden" data-aos="fade-up">Mendoza <span className='text-purple-700'>Automotores</span></h2>
-          <div className="hidden md:flex md:flex-col md:w-[50%] md:items-center">
-          <img src={backgroundR} alt="" className='absolute left-0 top-0'/>
-            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">Mendoza <span className='text-purple-700'>Automotores</span></h2>
-            <p className="text-gray-100 w-3/4 text-center text-sm lg:text-lg z-20" data-aos="fade-up">
-              {t("secondInfo")}
-            </p>
-          </div>
-          <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1703635365/mdzautomotores.vercel.app__Nest_Hub_Max_nslnoo.png' alt="" className="w-[80%] md:w-[50%] flex rounded-sm z-20" data-aos="fade-up"/>
-        </div>
-        <div className="flex flex-col justify-center items-center py-5 md:flex-row md:justify-start md:items-center md:my-10 relative" >
-          <h2 className="text-gray-100 text-lg font-semibold pb-2 md:hidden z-20">Shoes <span className='text-purple-700'>FR</span></h2>
-          <img src='https://res.cloudinary.com/dreso9ye9/image/upload/v1705419825/localhost_5173_home_Nest_Hub_Max_o2gmxk.png' alt="" className="w-[80%] md:w-[50%] flex z-20 rounded-sm" data-aos="fade-up"/>
-          <div className="hidden md:flex md:flex-col md:w-[50%] md:items-center">
-            <img src={backgroundR} alt="" className='absolute right-0 top-0'/>
-            <h2 className="text-gray-100 text-xl font-bold lg:text-2xl pb-3 z-20" data-aos="fade-up">Shoes <span className='text-purple-700'>FR</span></h2>
-            <p className="text-gray-100 w-3/4 text-center text-sm lg:text-lg z-20" data-aos="fade-up">
-            {t("thirdInfo")}
-            </p>
-          </div>
+        <div data-aos="fade" id="projects" className="px-16 lg:px-28 pt-10 flex flex-col justify-center items-center">
+          <Carousel
+          data-aos="fade-up"
+          opts={{
+              align: "start",
+          }}
+          className="2xl:w-[80%] w-full"
+          >
+          <CarouselContent>
+              {projects.map((project) => (
+              <CarouselItem key={project.id} className="">
+                  <Card className="w-full border-none outline-none flex justify-center items-center">
+                      <CardContent className="flex flex-col lg:flex lg:flex-row items-center justify-start p-6 bg-[#0e0719] lg:h-full sm:h-[37rem] h-[30rem] gap-5 lg:gap-0 shadow-sombra-imagenes">
+                        <img src={project.image} alt="" className="shadow-sombra-imagenes w-[35rem] 2xl:w-[40rem]"/>
+                          <section className="flex flex-col justify-center items-center gap-5">
+                              <div className="flex flex-col justify-start items-center gap-4">
+                                  {project.name}
+                                  <p className="text-center font-semibold text-sm xl:text-base text-white opacity-70 lg:px-16">{project.description}</p>
+                              </div>
+                              {project.deploy}
+                          </section>
+                      </CardContent>
+                  </Card>
+              </CarouselItem>
+              ))}
+          </CarouselContent>
+          <CarouselPrevious className="border-palette-500 text-white outline-none hover:opacity-80 hover:bg-purple-500 hover:text-white transform hover:scale-105 duration-500"/>
+          <CarouselNext className="border-palette-500 text-white outline-none hover:opacity-80 hover:bg-purple-500 hover:text-white transform hover:scale-105 duration-500"/>
+          </Carousel>
         </div>
       </div>
     );
