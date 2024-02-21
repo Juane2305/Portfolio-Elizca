@@ -63,7 +63,6 @@ const ContactUs = () => {
 
     return (
       <div id='contact' className="h-full w-full bg-[#0D0D0D] py-24">
-        <img src={background} alt="" className='absolute right-0'/>
         <section className='flex justify-center items-center lg:pt-10 mx-5 sm:mx-0'>
           <div className='z-10 hidden lg:w-[35rem] lg:flex lg:justify-center lg:items-center' data-aos="fade-up">
             <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1708040403/it-support-monochromatic_ify7og.svg" alt="" className='z-10 w-[30rem]'/>
