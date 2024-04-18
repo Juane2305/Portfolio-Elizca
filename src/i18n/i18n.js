@@ -8,7 +8,7 @@ i18n
   // init i18next
   .init({
     debug: true,
-    lng: 'en',
+    lng: 'es',
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
