@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Swal from 'sweetalert2';
-import background from '../../public/curvewave.svg'
+
 
 const ContactUs = () => {
 

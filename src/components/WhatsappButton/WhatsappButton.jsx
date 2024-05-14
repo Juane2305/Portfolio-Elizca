@@ -1,4 +1,4 @@
-const phoneNumber = '+542612404253'; // Acá tienen que agregar su número de teléfono
+const phoneNumber = '+542616986923'; // Acá tienen que agregar su número de teléfono
 
 
 const WhatsappButton = () => {
